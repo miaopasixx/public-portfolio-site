@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" property="og:description" content="Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."><meta name="keywords"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Markdown 样式示例" href="https://miaopasixx.github.io/blogs/rss.xml"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><meta name="generator" content="Astro v4.16.18"><title>Markdown 样式示例</title><link rel="icon" type="image/svg+xml" href="/favicon.ico"><script>
+	const getThemePreference = () => {
+		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+			return localStorage.getItem('theme');
+		}
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	};
+	const isDark = getThemePreference() === 'dark';
+	document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
+
+	if (typeof localStorage !== 'undefined') {
+		// Watch the document element and persist user preference when it changes.
+		const observer = new MutationObserver(() => {
+			const isDark = document.documentElement.classList.contains('theme-dark');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+		});
+		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+	}
+</script><style>.section-content[data-astro-cid-7jjqptxk],.section-desc[data-astro-cid-7jjqptxk]{text-align:center}.post-line-top[data-astro-cid-7jjqptxk]{border-top:1px dashed var(--color-700);padding-top:.5rem;padding-bottom:2rem;margin-top:.5rem;font-size:.875rem;white-space:nowrap;color:var(--color-500);font-weight:300}.post-line-bottom[data-astro-cid-7jjqptxk]{border-bottom:1px dashed var(--color-700);padding-bottom:.5rem;margin:1.25rem auto 2.5rem;font-size:.8rem;white-space:nowrap;color:var(--color-500)}.title-tag[data-astro-cid-7jjqptxk]{display:inline-block;font-size:13px;line-height:1;margin:16px auto 24px;border:1px solid var(--color-700);border-radius:36px;padding:8px 22px 4px;color:var(--color-300);text-align:center;font-family:var(--font-type);text-transform:uppercase;letter-spacing:1px}.title[data-astro-cid-7jjqptxk]{line-height:1.2;margin:.5rem 0;color:var(--color-100);text-align:center}.details[data-astro-cid-7jjqptxk]{display:flex;flex-direction:column;padding:.5rem;gap:1.5rem;justify-content:space-between;align-items:center}.tags[data-astro-cid-7jjqptxk]{display:flex;gap:.5rem}.description[data-astro-cid-7jjqptxk]{font-size:var(--text)}.content[data-astro-cid-7jjqptxk]{position:relative;color:var(--color-200);margin:3rem 0}.content[data-astro-cid-7jjqptxk]>*+*{margin-top:1rem}.content[data-astro-cid-7jjqptxk] h1,.content[data-astro-cid-7jjqptxk] h2,.content[data-astro-cid-7jjqptxk] h3,.content[data-astro-cid-7jjqptxk] h4,.content[data-astro-cid-7jjqptxk] h5{margin:1.75em 0 1em;color:var(--color-100)}.content[data-astro-cid-7jjqptxk] h2{font-size:1.75rem;color:var(--color-100)}.content[data-astro-cid-7jjqptxk] h3{font-size:1.5rem;color:var(--color-100)}.content[data-astro-cid-7jjqptxk] h4{font-size:1.25rem;color:var(--color-200)}.content[data-astro-cid-7jjqptxk] h5{font-size:1rem;color:var(--color-300)}.content[data-astro-cid-7jjqptxk] img{border-radius:8px}.content[data-astro-cid-7jjqptxk] p{margin:16px 0;line-height:1.8}.content[data-astro-cid-7jjqptxk] ol{padding-left:2em;margin:2em 0}@media (max-width:850px){.post-wrapper[data-astro-cid-7jjqptxk]{padding:0 1.25rem}.title-tag[data-astro-cid-7jjqptxk]{font-size:12px}}@media (max-width:376px){.post-wrapper[data-astro-cid-7jjqptxk]{padding:0 1rem}}.action-back[data-astro-cid-7jjqptxk]{display:none}@media (min-width:767px){.action-back[data-astro-cid-7jjqptxk]{position:fixed;display:block;top:74px;left:5%;background:var(--color-999)}}.article[data-astro-cid-7jjqptxk] a[data-astro-cid-7jjqptxk]:link{color:var(--color-blue)}
+</style>
+<link rel="stylesheet" href="/_astro/index.DYuzrNDG.css">
+<style>:root{--bg-svg-blend-mode: overlay;--bg-blend-mode: darken}:root.theme-dark{--bg-svg-blend-mode: darken;--bg-blend-mode: lighten}img{max-width:100%}.post{display:block;max-width:1020px;width:100%;margin:0 auto}section{position:relative;margin:0 auto 36px;width:100%;font-size:16px}p{line-height:1.6;margin-bottom:.875em;text-align:left}strong{font-weight:700}ul{padding-left:2em;margin:2em 0}ul ul{padding-left:1em;margin:.75em 0 2em}ul li{margin:.5em 0 .75em}.post-header{width:100%;margin:24px auto;padding-bottom:2rem;border-bottom:1px solid var(--border)}h1{font-size:2.25rem;font-weight:700;color:var(--color-100);text-align:center;line-height:1.333;margin:2rem auto .5rem}h2{font-size:2rem;font-weight:700;color:var(--color-100)}h3{font-size:1.5rem;font-weight:700;color:var(--color-100)}a:hover{text-decoration:underline}.post-title{grid-column-start:1;font-size:1.5rem;color:var(--color-100)}.content{margin-top:20px;color:var(--color-200);font-size:1rem}@media (max-width: 576px){.post h1{font-size:1.75rem;margin-top:2rem}.post h2{font-size:1.5rem}.post h3,.post .post-title{font-size:1.25rem}.post p,.post ul,.post li{font-size:.875rem}}
+</style><script type="module" src="/_astro/hoisted.Bmn5XpSw.js"></script></head> <body class="_body"> <div class=""> <nav data-astro-cid-dmqpwcec> <div class="container nav-wrapper" data-astro-cid-dmqpwcec> <div class="menu-header" data-astro-cid-dmqpwcec> <div class="site-title" data-astro-cid-dmqpwcec> <a href="/" class="author" data-astro-cid-dmqpwcec> <figure class="avatar" data-astro-cid-dmqpwcec> <img class="avatar__img" src="/assets/author.jpg" alt="" draggable="false" data-astro-cid-dmqpwcec> </figure> </a> <div class="train-switch" data-astro-cid-4bx3op6j> <button data-state="0" class="font-type train-yellow" data-astro-cid-4bx3op6j><span data-astro-cid-4bx3op6j>DESIGN</span> </button> <button data-state="1" class="font-type train-blue" data-astro-cid-4bx3op6j> <span data-astro-cid-4bx3op6j>SKILL</span></button> <button data-state="2" class="font-type train-green" data-astro-cid-4bx3op6j><span data-astro-cid-4bx3op6j>SURFING</span></button> </div> <script type="module">
+    // 定义事件，用于组件间通信
+    const EFFECT_CHANGE_EVENT = 'effect-state-changed';
+
+    // localStorage 操作函数
+    const saveState = (state) => {
+        try {
+            localStorage.setItem('effectState', state.toString());
+            // 设置过期时间 (48小时)
+            const expiry = Date.now() + 48 * 60 * 60 * 1000;
+            localStorage.setItem('effectStateExpiry', expiry.toString());
+        } catch (e) {
+            console.error('无法保存状态到localStorage:', e);
+        }
+    };
+
+    const getCurrentState = () => {
+        try {
+            // 检查是否过期
+            const expiry = localStorage.getItem('effectStateExpiry');
+            if (expiry && parseInt(expiry) < Date.now()) {
+                // 已过期，清除状态
+                localStorage.removeItem('effectState');
+                localStorage.removeItem('effectStateExpiry');
+                return 0;
+            }
+
+            const savedState = localStorage.getItem('effectState');
+            return savedState ? parseInt(savedState) : 0;
+        } catch (e) {
+            console.error('无法从localStorage读取状态:', e);
+            return 0;
+        }
+    };
+
+    // 获取按钮元素
+    const buttons = document.querySelectorAll('.train-switch button');
+
+    // 更新按钮显示
+    const updateButtonDisplay = (state) => {
+        buttons.forEach((button, index) => {
+            button.style.display = index === state ? 'block' : 'none';
+        });
+    };
+
+    // 初始化页面
+    const currentState = getCurrentState();
+    updateButtonDisplay(currentState);
+
+    // 按钮点击事件
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            const newState = (index + 1) % 3; // 循环切换状态
+
+            // 保存状态到 localStorage，48小时有效
+            saveState(newState);
+
+            // 更新按钮显示
+            updateButtonDisplay(newState);
+
+            // 触发自定义事件，通知效果组件更新
+            window.dispatchEvent(new CustomEvent(EFFECT_CHANGE_EVENT, {
+                detail: { state: newState }
+            }));
+        });
+    });
+</script>  </div> </div> <div id="menu-content" data-astro-cid-dmqpwcec> <div class="menu-footer pc-nav" data-astro-cid-dmqpwcec> <ul class="nav-items" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec> <a class="link" href="/" target="_self" data-astro-cid-dmqpwcec> 首页 </a> </li><li data-astro-cid-dmqpwcec> <a class="link" href="/project" target="_self" data-astro-cid-dmqpwcec> 项目 </a> </li><li data-astro-cid-dmqpwcec> <a class="link" href="/about" target="_self" data-astro-cid-dmqpwcec> 关于 </a> </li><li data-astro-cid-dmqpwcec> <a class="link active" href="/blog" target="_self" data-astro-cid-dmqpwcec> 博客 </a> </li> </ul> <div class="theme-toggle" style="transform:scale(0.75)" data-astro-cid-dmqpwcec> <theme-toggle data-astro-cid-x3pjskd3> <button data-astro-cid-x3pjskd3> <!-- <span class="sr-only">Dark theme</span> --> <span class="icon light" data-astro-cid-x3pjskd3><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="currentcolor" fill="currentcolor" class="astro-patnjmll" data-astro-cid-patnjmll> <g data-astro-cid-patnjmll><circle cx="128" cy="128" r="60" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M128 36V16M63 63 49 49m-13 79H16m47 65-14 14m79 13v20m65-47 14 14m13-79h20m-47-65 14-14"/></g>  </svg> </span> <span class="icon dark" data-astro-cid-x3pjskd3><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="currentcolor" fill="currentcolor" class="astro-patnjmll" data-astro-cid-patnjmll> <g data-astro-cid-patnjmll><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M216 112V64m24 24h-48m-24-64v32m16-16h-32m65 113A92 92 0 0 1 103 39h0a92 92 0 1 0 114 114Z"/></g>  </svg> </span> </button> </theme-toggle>   </div> </div> <div class="mobile-header" data-astro-cid-mmnn6jm5> <div class="hamburger" data-astro-cid-mmnn6jm5> <div class="hamburger-toggle" data-astro-cid-mmnn6jm5> <span data-astro-cid-mmnn6jm5></span> </div> </div> <div class="m-nav" data-astro-cid-mmnn6jm5> <div class="m-nav-wrap" data-astro-cid-mmnn6jm5> <ul class="m-menu" data-astro-cid-mmnn6jm5> <li class="m-menu-li" data-astro-cid-mmnn6jm5> <a class="m-menu__link l" href="/" target="_self" data-astro-cid-mmnn6jm5> 首页 </a> </li><li class="m-menu-li" data-astro-cid-mmnn6jm5> <a class="m-menu__link l" href="/project" target="_self" data-astro-cid-mmnn6jm5> 项目 </a> </li><li class="m-menu-li" data-astro-cid-mmnn6jm5> <a class="m-menu__link l" href="/about" target="_self" data-astro-cid-mmnn6jm5> 关于 </a> </li><li class="m-menu-li" data-astro-cid-mmnn6jm5> <a class="m-menu__link l active" href="/blog" target="_self" data-astro-cid-mmnn6jm5> 博客 </a> </li> <li class="m-menu-li" data-astro-cid-mmnn6jm5> <div class="theme-toggle" style="transform:scale(1.1);" data-astro-cid-mmnn6jm5></div> </li> </ul> </div> </div> <div class="m-nav-mask" data-astro-cid-mmnn6jm5></div> </div>   </div> </div> </nav> <div class="train-1" data-astro-cid-yntz5ahj> <div class="effects train-icons" data-astro-cid-yntz5ahj> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/bezier.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/game.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/hourglass.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/image.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/rocket.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/compass.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/battery.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/lamp.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/coffee-cup.png)" data-astro-cid-yntz5ahj></div> </div> <div class="effects__img" data-astro-cid-yntz5ahj> <div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/weather.png)" data-astro-cid-yntz5ahj></div> </div> </div> </div> <!-- <div class="train-switch train-switch-abs">
+    <button data-state="0" class="font-type train-yellow"><span>ICONS</span> </button>
+    <button data-state="1" class="font-type train-blue"> <span>LOGO</span></button>
+		<button data-state="2" class="font-type train-green"><span>PRISM</span></button>
+</div>
+ --> <script src="/plugins/effects/imagesloaded.pkgd.min.js"></script> <script src="/plugins/effects/gsap.min.js"></script> <script type="module">
+	import { preloadImages } from '/plugins/effects/utils.js';
+	import { ImageTrail } from '/plugins/effects/imageTrail.js';
+
+	// 图片数组定义
+	const images = [
+		'bezier.png',
+		'game.png',
+		'hourglass.png',
+		'image.png',
+		'rocket.png',
+		'compass.png',
+		'battery.png',
+		'lamp.png',
+		'coffee-cup.png',
+		'weather.png'
+	];
+	const logoImages = [
+		'apple.png',
+		'blender.png',
+		'dribbble.png',
+		'figma.png',
+		'github.png',
+		'pin.png',
+		'react.png',
+		'sketch.png',
+		'vue.png',
+		'wechat.png'
+	];
+	const uiImages = [
+		'bell.png',
+		'browser.png',
+		'document.png',
+		'speaker.png',
+		'phone.png',
+		'folder.png',
+		'atom.png',
+		'calculator.png',
+		'computer.png',
+		'delete.png'
+	];
+
+	// 定义事件，用于组件间通信
+	const EFFECT_CHANGE_EVENT = 'effect-state-changed';
+
+	// 获取当前效果状态
+	const getCurrentState = () => {
+		try {
+			// 检查是否过期
+			const expiry = localStorage.getItem('effectStateExpiry');
+			if (expiry && parseInt(expiry) < Date.now()) {
+				// 已过期，清除状态
+				localStorage.removeItem('effectState');
+				localStorage.removeItem('effectStateExpiry');
+				return 0;
+			}
+
+			const savedState = localStorage.getItem('effectState');
+			return savedState ? parseInt(savedState) : 0;
+		} catch (e) {
+			console.error('无法从localStorage读取状态:', e);
+			return 0;
+		}
+	};
+
+	// DOM 元素
+	const effects = document.querySelector('.effects');
+	const effectsImgs = document.querySelectorAll('.effects__img-inner');
+
+	// 更新图片
+	const changeImages = (imagesArr, folderPath) => {
+		effectsImgs.forEach((img, index) => {
+			img.style.backgroundImage = `url(${folderPath}${imagesArr[index]})`;
+		});
+	};
+
+	// 更新效果类名
+	const updateEffectsClass = (state) => {
+		effects.className = 'effects'; // 重置类名
+		switch (state) {
+			case 0:
+				effects.classList.add('train-icons');
+				break;
+			case 1:
+				effects.classList.add('train-logo');
+				break;
+			case 2:
+				effects.classList.add('train-prism');
+				break;
+			default:
+				effects.classList.add('train-icons');
+		}
+	};
+
+	// 初始化状态
+	const initializeState = (state) => {
+		updateEffectsClass(state);
+		switch (state) {
+			case 0:
+				changeImages(images, '/assets/effects/3dicons/');
+				break;
+			case 1:
+				changeImages(logoImages, '/assets/effects/logo/');
+				break;
+			case 2:
+				changeImages(uiImages, '/assets/effects/uiicons/');
+				break;
+			default:
+				changeImages(images, '/assets/effects/3dicons/');
+		}
+	};
+
+	// 图片预加载
+	preloadImages('.effects__img-inner').then(() => {
+		new ImageTrail(document.querySelector('.effects'));
+	});
+
+	// 初始化页面
+	const currentState = getCurrentState();
+	initializeState(currentState);
+
+	// 监听状态变化事件
+	window.addEventListener(EFFECT_CHANGE_EVENT, (e) => {
+		const newState = e.detail.state;
+		initializeState(newState);
+	});
+</script>     <div class="section post"> <div class="container">   <div class="post article" data-astro-cid-7jjqptxk> <main class="post-wrapper" data-astro-cid-7jjqptxk> <div class="section-header" data-astro-cid-7jjqptxk> <div class="row" data-astro-cid-7jjqptxk> <div class="section-content col-1a" data-astro-cid-7jjqptxk> <div class="section-title" data-astro-cid-7jjqptxk> <div class="title-tag" data-astro-cid-7jjqptxk>
+Article
+</div> <h1 class="title" data-astro-cid-7jjqptxk> Markdown 样式示例 </h1> </div> <!-- <div class="section-desc  text-center" >
+							{entry.data.description}
+						</div> --> </div> </div> <div class="post-line post-line-bottom text-center" data-astro-cid-7jjqptxk> <span class="text-center" data-astro-cid-7jjqptxk>更新于：2024-10-20</span>  </div> </div> <section data-astro-cid-7jjqptxk> <div class="content" data-astro-cid-7jjqptxk> <p>Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.</p>
+<h2 id="headings">Headings</h2>
+<p>The following HTML <code>&#x3C;h1></code>—<code>&#x3C;h6></code> elements represent six levels of section headings. <code>&#x3C;h1></code> is the highest section level while <code>&#x3C;h6></code> is the lowest.</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h2 id="paragraph">Paragraph</h2>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<h2 id="images">Images</h2>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+<h3 id="blockquote-without-attribution">Blockquote without attribution</h3>
+<h4 id="syntax">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#85E89D">> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  </span></span>
+<span class="line"><span style="color:#85E89D">> </span><span style="color:#E1E4E8;font-weight:bold">**Note**</span><span style="color:#85E89D"> that you can use </span><span style="color:#E1E4E8;font-style:italic">_Markdown syntax_</span><span style="color:#85E89D"> within a blockquote.</span></span>
+<span class="line"></span></code></pre>
+<h4 id="output">Output</h4>
+<blockquote>
+<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.<br>
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
+</blockquote>
+<h3 id="blockquote-with-attribution">Blockquote with attribution</h3>
+<h4 id="syntax-1">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#85E89D">> Don't communicate by sharing memory, share memory by communicating.&#x3C;br></span></span>
+<span class="line"><span style="color:#85E89D">> — &#x3C;cite>Rob Pike[</span><span style="color:#DBEDFF;text-decoration:underline">^1</span><span style="color:#85E89D">]&#x3C;/cite></span></span>
+<span class="line"></span></code></pre>
+<h4 id="output-1">Output</h4>
+<blockquote>
+<p>Don’t communicate by sharing memory, share memory by communicating.<br>
+— <cite>Rob Pike<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></cite></p>
+</blockquote>
+<h2 id="tables">Tables</h2>
+<h3 id="syntax-2">Syntax</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">| Italics   | Bold     | Code   |</span></span>
+<span class="line"><span style="color:#E1E4E8">| --------- | -------- | ------ |</span></span>
+<span class="line"><span style="color:#E1E4E8">| </span><span style="color:#E1E4E8;font-style:italic">_italics_</span><span style="color:#E1E4E8"> | </span><span style="color:#E1E4E8;font-weight:bold">**bold**</span><span style="color:#E1E4E8"> | </span><span style="color:#79B8FF">`code`</span><span style="color:#E1E4E8"> |</span></span>
+<span class="line"></span></code></pre>
+<h3 id="output-2">Output</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Italics</th><th>Bold</th><th>Code</th></tr></thead><tbody><tr><td><em>italics</em></td><td><strong>bold</strong></td><td><code>code</code></td></tr></tbody></table>
+<h2 id="code-blocks">Code Blocks</h2>
+<h3 id="syntax-3">Syntax</h3>
+<p>we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">```html</span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;!doctype html></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;html lang="en"></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;head></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;meta charset="utf-8" /></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;title>Example HTML5 Document&#x3C;/title></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/head></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;body></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;p>Test&#x3C;/p></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/body></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/html></span></span>
+<span class="line"><span style="color:#E1E4E8">```</span></span>
+<span class="line"></span></code></pre>
+<h3 id="output-3">Output</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&#x3C;!</span><span style="color:#85E89D">doctype</span><span style="color:#B392F0"> html</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">html</span><span style="color:#B392F0"> lang</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"en"</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">head</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">meta</span><span style="color:#B392F0"> charset</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"utf-8"</span><span style="color:#E1E4E8"> /></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">title</span><span style="color:#E1E4E8">>Example HTML5 Document&#x3C;/</span><span style="color:#85E89D">title</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/</span><span style="color:#85E89D">head</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">body</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">>Test&#x3C;/</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/</span><span style="color:#85E89D">body</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">html</span><span style="color:#E1E4E8">></span></span>
+<span class="line"></span></code></pre>
+<h2 id="list-types">List Types</h2>
+<h3 id="ordered-list">Ordered List</h3>
+<h4 id="syntax-4">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">1.</span><span style="color:#E1E4E8"> First item</span></span>
+<span class="line"><span style="color:#FFAB70">2.</span><span style="color:#E1E4E8"> Second item</span></span>
+<span class="line"><span style="color:#FFAB70">3.</span><span style="color:#E1E4E8"> Third item</span></span>
+<span class="line"></span></code></pre>
+<h4 id="output-4">Output</h4>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h3 id="unordered-list">Unordered List</h3>
+<h4 id="syntax-5">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> List item</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Another item</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> And another item</span></span>
+<span class="line"></span></code></pre>
+<h4 id="output-5">Output</h4>
+<ul>
+<li>List item</li>
+<li>Another item</li>
+<li>And another item</li>
+</ul>
+<h3 id="nested-list">Nested list</h3>
+<h4 id="syntax-6">Syntax</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Fruit</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Apple</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Orange</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Banana</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Dairy</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Milk</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Cheese</span></span>
+<span class="line"></span></code></pre>
+<h4 id="output-6">Output</h4>
+<ul>
+<li>Fruit
+<ul>
+<li>Apple</li>
+<li>Orange</li>
+<li>Banana</li>
+</ul>
+</li>
+<li>Dairy
+<ul>
+<li>Milk</li>
+<li>Cheese</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
+<h3 id="syntax-7">Syntax</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">&#x3C;abbr title="Graphics Interchange Format">GIF&#x3C;/abbr> is a bitmap image format.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">H&#x3C;sub>2&#x3C;/sub>O</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">X&#x3C;sup>n&#x3C;/sup> + Y&#x3C;sup>n&#x3C;/sup> = Z&#x3C;sup>n&#x3C;/sup></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Press &#x3C;kbd>CTRL&#x3C;/kbd> + &#x3C;kbd>ALT&#x3C;/kbd> + &#x3C;kbd>Delete&#x3C;/kbd> to end the session.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Most &#x3C;mark>salamanders&#x3C;/mark> are nocturnal, and hunt for insects, worms, and other small creatures.</span></span>
+<span class="line"></span></code></pre>
+<h3 id="output-7">Output</h3>
+<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.</p>
+<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>The above quote is excerpted from Rob Pike’s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015. <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section> </div> </section> </main> </div>    </div> </div> <footer data-astro-cid-sz7xmlte> <div class="group" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>© 2025 Chenxi. All Rights Reserved.</p> </div> </footer>  </div>  </body> </html> 
