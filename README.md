@@ -160,7 +160,10 @@ Yarn Command:
 | `yarn astro --help`    | Get help using the Astro CLI                     |
 
 ---
-
+步骤：
+npm install -g yarn	
+yarn install
+yarn dev
 
 ### 关于作者
 
