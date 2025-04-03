@@ -1,7 +1,8 @@
 <div class="train-switch">
-    <button data-state="0" class="font-type train-yellow"><span>分享工具</span> </button>
-    <button data-state="1" class="font-type train-blue"> <span>热爱生活</span></button>
-    <button data-state="2" class="font-type train-green"><span>想法体会</span></button>
+    <button data-state="0" class="font-type train-yellow"><span>Share Tools</span> </button>
+    <button data-state="1" class="font-type train-blue"> <span>Love Life</span></button>
+    <button data-state="2" class="font-type train-green"><span>Thoughts</span></button>
+	<button data-state="3" class="font-type train-pink"><span>Insights</span></button>
 </div>
 
 <script is:inline type="module">
@@ -56,7 +57,7 @@
     // 按钮点击事件
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
-            const newState = (index + 1) % 3; // 循环切换状态
+            const newState = (index + 1) % 4; // 循环切换状态
 
             // 保存状态到 localStorage，48小时有效
             saveState(newState);
@@ -151,7 +152,10 @@
 	--train-color:#1bc47d;
 	--train-color-rgb:27, 196, 125;
 }
-
+.train-pink{
+	--train-color:#f1aee3;
+	--train-color-rgb:241, 174, 227;
+}
 .animated {
 	animation-duration: .75s; /* 动画持续时间 */
 	animation-fill-mode: forwards;

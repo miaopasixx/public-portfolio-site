@@ -17,11 +17,12 @@ export const nav: Nav = {
         { label: '项目', href: '/project', target: '_self' },
         { label: '关于', href: '/about', target: '_self' },
         { label: '博客', href: '/blog', target: '_self' },
+		{ label: '技术↗', href: 'https://miaopasixx.github.io/tools/', target: '_blank' },
     ],
 };
 
 // Footer
-export const footerText = `© ${new Date().getFullYear()} Chenxi. All Rights Reserved.`
+export const footerText = `© ${new Date().getFullYear()} Small Sun. All Rights Reserved.`
 
 //SEO TDK
 interface SeoTdk {
@@ -37,19 +38,19 @@ export const homeTdk: SeoTdk = {
 }
 // SEO TDK 博客
 export const blogTdk: SeoTdk = {
-	title: '小太阳🔆的博客',
+	title: '博客丨Blog',
 	description: '记录我的一些想法和笔记',
 	keywords: '小太阳🔆,博客,blog'
 }
 // SEO TDK 关于
 export const aboutTdk: SeoTdk = {
-	title: '小太阳🔆的个人介绍',
+	title: '关于我丨About',
 	description: '小太阳🔆的个人介绍',
 	keywords: '小太阳🔆,博客'
 }
 // SEO TDK  项目
 export const projectTdk: SeoTdk = {
-	title: '小太阳🔆推荐项目介绍',
+	title: '项目介绍丨Project',
 	description: '这是我的部分项目展示',
 	keywords: '小太阳🔆,博客,project'
 }
@@ -136,7 +137,7 @@ interface PageDescription {
 }
 export const pageDescription: PageDescription = {
 	index: '你好！我是小太阳🔆，我是极客资源工具组室长。致力分享实用工具和技术见解，欢迎探索我的思考与经验。',
-	project: "这是我的部分项目展示",
+	project: "这里展示了一些精选项目作品，涵盖了不同领域的实践探索",
 	about: '专注于工具分享，欢迎关注我，了解更多关于我的信息。',
 	blog: '这是我的个人笔记和想法， 希望你能够获得帮助！',
 }
