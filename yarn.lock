@@ -136,7 +136,7 @@
   resolved "https://mirrors.huaweicloud.com/repository/npm/@babel/compat-data/-/compat-data-7.26.8.tgz"
   integrity sha512-oH5UPLMWR3L2wEFLnFJ1TZXqHufiTKAiLfqw5zkhS4dKXLJ10yVztfil/twG8EDTA4F/tvVNw9nOl4ZMslB8rQ==
 
-"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.26.0":
+"@babel/core@^7.26.0":
   version "7.26.10"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@babel/core/-/core-7.26.10.tgz"
   integrity sha512-vMqyb7XCDMPvJFFOaT9kxtiRh42GwlZEg1/uIgtZshS5a/8OaduUfCi7kynKgc3Tw/6Uo2D+db9qBttghhmxwQ==
@@ -330,10 +330,235 @@
   resolved "https://mirrors.huaweicloud.com/repository/npm/@emmetio/stream-reader/-/stream-reader-2.2.0.tgz"
   integrity sha512-fXVXEyFA5Yv3M3n8sUGT7+fvecGrZP4k6FnWWMSZVQf69kAq0LLpaBQLGcPR30m3zMmKYhECP4k/ZkzvhEW5kw==
 
+"@emnapi/runtime@^1.2.0":
+  version "1.4.0"
+  resolved "https://registry.npmmirror.com/@emnapi/runtime/-/runtime-1.4.0.tgz#8f509bf1059a5551c8fe829a1c4e91db35fdfbee"
+  integrity sha512-64WYIf4UYcdLnbKn/umDlNjQDSS8AgZrI/R9+x5ilkUVFxXcA1Ebl+gQLc/6mERA4407Xof0R7wEyEuj091CVw==
+  dependencies:
+    tslib "^2.4.0"
+
+"@esbuild/aix-ppc64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/aix-ppc64/-/aix-ppc64-0.21.5.tgz#c7184a326533fcdf1b8ee0733e21c713b975575f"
+  integrity sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==
+
+"@esbuild/android-arm64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/android-arm64/-/android-arm64-0.21.5.tgz#09d9b4357780da9ea3a7dfb833a1f1ff439b4052"
+  integrity sha512-c0uX9VAUBQ7dTDCjq+wdyGLowMdtR/GoC2U5IYk/7D1H1JYC0qseD7+11iMP2mRLN9RcCMRcjC4YMclCzGwS/A==
+
+"@esbuild/android-arm@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/android-arm/-/android-arm-0.21.5.tgz#9b04384fb771926dfa6d7ad04324ecb2ab9b2e28"
+  integrity sha512-vCPvzSjpPHEi1siZdlvAlsPxXl7WbOVUBBAowWug4rJHb68Ox8KualB+1ocNvT5fjv6wpkX6o/iEpbDrf68zcg==
+
+"@esbuild/android-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/android-x64/-/android-x64-0.21.5.tgz#29918ec2db754cedcb6c1b04de8cd6547af6461e"
+  integrity sha512-D7aPRUUNHRBwHxzxRvp856rjUHRFW1SdQATKXH2hqA0kAZb1hKmi02OpYRacl0TxIGz/ZmXWlbZgjwWYaCakTA==
+
+"@esbuild/darwin-arm64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/darwin-arm64/-/darwin-arm64-0.21.5.tgz#e495b539660e51690f3928af50a76fb0a6ccff2a"
+  integrity sha512-DwqXqZyuk5AiWWf3UfLiRDJ5EDd49zg6O9wclZ7kUMv2WRFr4HKjXp/5t8JZ11QbQfUS6/cRCKGwYhtNAY88kQ==
+
+"@esbuild/darwin-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/darwin-x64/-/darwin-x64-0.21.5.tgz#c13838fa57372839abdddc91d71542ceea2e1e22"
+  integrity sha512-se/JjF8NlmKVG4kNIuyWMV/22ZaerB+qaSi5MdrXtd6R08kvs2qCN4C09miupktDitvh8jRFflwGFBQcxZRjbw==
+
+"@esbuild/freebsd-arm64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/freebsd-arm64/-/freebsd-arm64-0.21.5.tgz#646b989aa20bf89fd071dd5dbfad69a3542e550e"
+  integrity sha512-5JcRxxRDUJLX8JXp/wcBCy3pENnCgBR9bN6JsY4OmhfUtIHe3ZW0mawA7+RDAcMLrMIZaf03NlQiX9DGyB8h4g==
+
+"@esbuild/freebsd-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/freebsd-x64/-/freebsd-x64-0.21.5.tgz#aa615cfc80af954d3458906e38ca22c18cf5c261"
+  integrity sha512-J95kNBj1zkbMXtHVH29bBriQygMXqoVQOQYA+ISs0/2l3T9/kj42ow2mpqerRBxDJnmkUDCaQT/dfNXWX/ZZCQ==
+
+"@esbuild/linux-arm64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-arm64/-/linux-arm64-0.21.5.tgz#70ac6fa14f5cb7e1f7f887bcffb680ad09922b5b"
+  integrity sha512-ibKvmyYzKsBeX8d8I7MH/TMfWDXBF3db4qM6sy+7re0YXya+K1cem3on9XgdT2EQGMu4hQyZhan7TeQ8XkGp4Q==
+
+"@esbuild/linux-arm@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-arm/-/linux-arm-0.21.5.tgz#fc6fd11a8aca56c1f6f3894f2bea0479f8f626b9"
+  integrity sha512-bPb5AHZtbeNGjCKVZ9UGqGwo8EUu4cLq68E95A53KlxAPRmUyYv2D6F0uUI65XisGOL1hBP5mTronbgo+0bFcA==
+
+"@esbuild/linux-ia32@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-ia32/-/linux-ia32-0.21.5.tgz#3271f53b3f93e3d093d518d1649d6d68d346ede2"
+  integrity sha512-YvjXDqLRqPDl2dvRODYmmhz4rPeVKYvppfGYKSNGdyZkA01046pLWyRKKI3ax8fbJoK5QbxblURkwK/MWY18Tg==
+
+"@esbuild/linux-loong64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-loong64/-/linux-loong64-0.21.5.tgz#ed62e04238c57026aea831c5a130b73c0f9f26df"
+  integrity sha512-uHf1BmMG8qEvzdrzAqg2SIG/02+4/DHB6a9Kbya0XDvwDEKCoC8ZRWI5JJvNdUjtciBGFQ5PuBlpEOXQj+JQSg==
+
+"@esbuild/linux-mips64el@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-mips64el/-/linux-mips64el-0.21.5.tgz#e79b8eb48bf3b106fadec1ac8240fb97b4e64cbe"
+  integrity sha512-IajOmO+KJK23bj52dFSNCMsz1QP1DqM6cwLUv3W1QwyxkyIWecfafnI555fvSGqEKwjMXVLokcV5ygHW5b3Jbg==
+
+"@esbuild/linux-ppc64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-ppc64/-/linux-ppc64-0.21.5.tgz#5f2203860a143b9919d383ef7573521fb154c3e4"
+  integrity sha512-1hHV/Z4OEfMwpLO8rp7CvlhBDnjsC3CttJXIhBi+5Aj5r+MBvy4egg7wCbe//hSsT+RvDAG7s81tAvpL2XAE4w==
+
+"@esbuild/linux-riscv64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-riscv64/-/linux-riscv64-0.21.5.tgz#07bcafd99322d5af62f618cb9e6a9b7f4bb825dc"
+  integrity sha512-2HdXDMd9GMgTGrPWnJzP2ALSokE/0O5HhTUvWIbD3YdjME8JwvSCnNGBnTThKGEB91OZhzrJ4qIIxk/SBmyDDA==
+
+"@esbuild/linux-s390x@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-s390x/-/linux-s390x-0.21.5.tgz#b7ccf686751d6a3e44b8627ababc8be3ef62d8de"
+  integrity sha512-zus5sxzqBJD3eXxwvjN1yQkRepANgxE9lgOW2qLnmr8ikMTphkjgXu1HR01K4FJg8h1kEEDAqDcZQtbrRnB41A==
+
+"@esbuild/linux-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/linux-x64/-/linux-x64-0.21.5.tgz#6d8f0c768e070e64309af8004bb94e68ab2bb3b0"
+  integrity sha512-1rYdTpyv03iycF1+BhzrzQJCdOuAOtaqHTWJZCWvijKD2N5Xu0TtVC8/+1faWqcP9iBCWOmjmhoH94dH82BxPQ==
+
+"@esbuild/netbsd-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/netbsd-x64/-/netbsd-x64-0.21.5.tgz#bbe430f60d378ecb88decb219c602667387a6047"
+  integrity sha512-Woi2MXzXjMULccIwMnLciyZH4nCIMpWQAs049KEeMvOcNADVxo0UBIQPfSmxB3CWKedngg7sWZdLvLczpe0tLg==
+
+"@esbuild/openbsd-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/openbsd-x64/-/openbsd-x64-0.21.5.tgz#99d1cf2937279560d2104821f5ccce220cb2af70"
+  integrity sha512-HLNNw99xsvx12lFBUwoT8EVCsSvRNDVxNpjZ7bPn947b8gJPzeHWyNVhFsaerc0n3TsbOINvRP2byTZ5LKezow==
+
+"@esbuild/sunos-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/sunos-x64/-/sunos-x64-0.21.5.tgz#08741512c10d529566baba837b4fe052c8f3487b"
+  integrity sha512-6+gjmFpfy0BHU5Tpptkuh8+uw3mnrvgs+dSPQXQOv3ekbordwnzTVEb4qnIvQcYXq6gzkyTnoZ9dZG+D4garKg==
+
+"@esbuild/win32-arm64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/win32-arm64/-/win32-arm64-0.21.5.tgz#675b7385398411240735016144ab2e99a60fc75d"
+  integrity sha512-Z0gOTd75VvXqyq7nsl93zwahcTROgqvuAcYDUr+vOv8uHhNSKROyU961kgtCD1e95IqPKSQKH7tBTslnS3tA8A==
+
+"@esbuild/win32-ia32@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmmirror.com/@esbuild/win32-ia32/-/win32-ia32-0.21.5.tgz#1bfc3ce98aa6ca9a0969e4d2af72144c59c1193b"
+  integrity sha512-SWXFF1CL2RVNMaVs+BBClwtfZSvDgtL//G/smwAc5oVK/UPu2Gu9tIaRgFmYFFKrmg3SyAjSrElf0TiJ1v8fYA==
+
 "@esbuild/win32-x64@0.21.5":
   version "0.21.5"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz"
   integrity sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==
+
+"@img/sharp-darwin-arm64@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.33.5.tgz#ef5b5a07862805f1e8145a377c8ba6e98813ca08"
+  integrity sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==
+  optionalDependencies:
+    "@img/sharp-libvips-darwin-arm64" "1.0.4"
+
+"@img/sharp-darwin-x64@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.33.5.tgz#e03d3451cd9e664faa72948cc70a403ea4063d61"
+  integrity sha512-fyHac4jIc1ANYGRDxtiqelIbdWkIuQaI84Mv45KvGRRxSAa7o7d1ZKAOBaYbnepLC1WqxfpimdeWfvqqSGwR2Q==
+  optionalDependencies:
+    "@img/sharp-libvips-darwin-x64" "1.0.4"
+
+"@img/sharp-libvips-darwin-arm64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.0.4.tgz#447c5026700c01a993c7804eb8af5f6e9868c07f"
+  integrity sha512-XblONe153h0O2zuFfTAbQYAX2JhYmDHeWikp1LM9Hul9gVPjFY427k6dFEcOL72O01QxQsWi761svJ/ev9xEDg==
+
+"@img/sharp-libvips-darwin-x64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.0.4.tgz#e0456f8f7c623f9dbfbdc77383caa72281d86062"
+  integrity sha512-xnGR8YuZYfJGmWPvmlunFaWJsb9T/AO2ykoP3Fz/0X5XV2aoYBPkX6xqCQvUTKKiLddarLaxpzNe+b1hjeWHAQ==
+
+"@img/sharp-libvips-linux-arm64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-linux-arm64/-/sharp-libvips-linux-arm64-1.0.4.tgz#979b1c66c9a91f7ff2893556ef267f90ebe51704"
+  integrity sha512-9B+taZ8DlyyqzZQnoeIvDVR/2F4EbMepXMc/NdVbkzsJbzkUjhXv/70GQJ7tdLA4YJgNP25zukcxpX2/SueNrA==
+
+"@img/sharp-libvips-linux-arm@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-linux-arm/-/sharp-libvips-linux-arm-1.0.5.tgz#99f922d4e15216ec205dcb6891b721bfd2884197"
+  integrity sha512-gvcC4ACAOPRNATg/ov8/MnbxFDJqf/pDePbBnuBDcjsI8PssmjoKMAz4LtLaVi+OnSb5FK/yIOamqDwGmXW32g==
+
+"@img/sharp-libvips-linux-s390x@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-linux-s390x/-/sharp-libvips-linux-s390x-1.0.4.tgz#f8a5eb1f374a082f72b3f45e2fb25b8118a8a5ce"
+  integrity sha512-u7Wz6ntiSSgGSGcjZ55im6uvTrOxSIS8/dgoVMoiGE9I6JAfU50yH5BoDlYA1tcuGS7g/QNtetJnxA6QEsCVTA==
+
+"@img/sharp-libvips-linux-x64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.0.4.tgz#d4c4619cdd157774906e15770ee119931c7ef5e0"
+  integrity sha512-MmWmQ3iPFZr0Iev+BAgVMb3ZyC4KeFc3jFxnNbEPas60e1cIfevbtuyf9nDGIzOaW9PdnDciJm+wFFaTlj5xYw==
+
+"@img/sharp-libvips-linuxmusl-arm64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-linuxmusl-arm64/-/sharp-libvips-linuxmusl-arm64-1.0.4.tgz#166778da0f48dd2bded1fa3033cee6b588f0d5d5"
+  integrity sha512-9Ti+BbTYDcsbp4wfYib8Ctm1ilkugkA/uscUn6UXK1ldpC1JjiXbLfFZtRlBhjPZ5o1NCLiDbg8fhUPKStHoTA==
+
+"@img/sharp-libvips-linuxmusl-x64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@img/sharp-libvips-linuxmusl-x64/-/sharp-libvips-linuxmusl-x64-1.0.4.tgz#93794e4d7720b077fcad3e02982f2f1c246751ff"
+  integrity sha512-viYN1KX9m+/hGkJtvYYp+CCLgnJXwiQB39damAO7WMdKWlIhmYTfHjwSbQeUK/20vY154mwezd9HflVFM1wVSw==
+
+"@img/sharp-linux-arm64@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-linux-arm64/-/sharp-linux-arm64-0.33.5.tgz#edb0697e7a8279c9fc829a60fc35644c4839bb22"
+  integrity sha512-JMVv+AMRyGOHtO1RFBiJy/MBsgz0x4AWrT6QoEVVTyh1E39TrCUpTRI7mx9VksGX4awWASxqCYLCV4wBZHAYxA==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-arm64" "1.0.4"
+
+"@img/sharp-linux-arm@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-linux-arm/-/sharp-linux-arm-0.33.5.tgz#422c1a352e7b5832842577dc51602bcd5b6f5eff"
+  integrity sha512-JTS1eldqZbJxjvKaAkxhZmBqPRGmxgu+qFKSInv8moZ2AmT5Yib3EQ1c6gp493HvrvV8QgdOXdyaIBrhvFhBMQ==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-arm" "1.0.5"
+
+"@img/sharp-linux-s390x@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-linux-s390x/-/sharp-linux-s390x-0.33.5.tgz#f5c077926b48e97e4a04d004dfaf175972059667"
+  integrity sha512-y/5PCd+mP4CA/sPDKl2961b+C9d+vPAveS33s6Z3zfASk2j5upL6fXVPZi7ztePZ5CuH+1kW8JtvxgbuXHRa4Q==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-s390x" "1.0.4"
+
+"@img/sharp-linux-x64@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-linux-x64/-/sharp-linux-x64-0.33.5.tgz#d806e0afd71ae6775cc87f0da8f2d03a7c2209cb"
+  integrity sha512-opC+Ok5pRNAzuvq1AG0ar+1owsu842/Ab+4qvU879ippJBHvyY5n2mxF1izXqkPYlGuP/M556uh53jRLJmzTWA==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-x64" "1.0.4"
+
+"@img/sharp-linuxmusl-arm64@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-linuxmusl-arm64/-/sharp-linuxmusl-arm64-0.33.5.tgz#252975b915894fb315af5deea174651e208d3d6b"
+  integrity sha512-XrHMZwGQGvJg2V/oRSUfSAfjfPxO+4DkiRh6p2AFjLQztWUuY/o8Mq0eMQVIY7HJ1CDQUJlxGGZRw1a5bqmd1g==
+  optionalDependencies:
+    "@img/sharp-libvips-linuxmusl-arm64" "1.0.4"
+
+"@img/sharp-linuxmusl-x64@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-linuxmusl-x64/-/sharp-linuxmusl-x64-0.33.5.tgz#3f4609ac5d8ef8ec7dadee80b560961a60fd4f48"
+  integrity sha512-WT+d/cgqKkkKySYmqoZ8y3pxx7lx9vVejxW/W4DOFMYVSkErR+w7mf2u8m/y4+xHe7yY9DAXQMWQhpnMuFfScw==
+  optionalDependencies:
+    "@img/sharp-libvips-linuxmusl-x64" "1.0.4"
+
+"@img/sharp-wasm32@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-wasm32/-/sharp-wasm32-0.33.5.tgz#6f44f3283069d935bb5ca5813153572f3e6f61a1"
+  integrity sha512-ykUW4LVGaMcU9lu9thv85CbRMAwfeadCJHRsg2GmeRa/cJxsVY9Rbd57JcMxBkKHag5U/x7TSBpScF4U8ElVzg==
+  dependencies:
+    "@emnapi/runtime" "^1.2.0"
+
+"@img/sharp-win32-ia32@0.33.5":
+  version "0.33.5"
+  resolved "https://registry.npmmirror.com/@img/sharp-win32-ia32/-/sharp-win32-ia32-0.33.5.tgz#1a0c839a40c5351e9885628c85f2e5dfd02b52a9"
+  integrity sha512-T36PblLaTwuVJ/zw/LaH0PdZkRz5rd3SmMHX8GSmR7vtNSP5Z6bQkExdSK7xGWyxLw4sUknBuugTelgw2faBbQ==
 
 "@img/sharp-win32-x64@0.33.5":
   version "0.33.5"
@@ -380,7 +605,7 @@
     "@nodelib/fs.stat" "2.0.5"
     run-parallel "^1.1.9"
 
-"@nodelib/fs.stat@^2.0.2", "@nodelib/fs.stat@2.0.5":
+"@nodelib/fs.stat@2.0.5", "@nodelib/fs.stat@^2.0.2":
   version "2.0.5"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz"
   integrity sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==
@@ -397,6 +622,66 @@
   version "1.1.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@oslojs/encoding/-/encoding-1.1.0.tgz"
   integrity sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==
+
+"@parcel/watcher-android-arm64@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-android-arm64/-/watcher-android-arm64-2.5.1.tgz#507f836d7e2042f798c7d07ad19c3546f9848ac1"
+  integrity sha512-KF8+j9nNbUN8vzOFDpRMsaKBHZ/mcjEjMToVMJOhTozkDonQFFrRcfdLWn6yWKCmJKmdVxSgHiYvTCef4/qcBA==
+
+"@parcel/watcher-darwin-arm64@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-darwin-arm64/-/watcher-darwin-arm64-2.5.1.tgz#3d26dce38de6590ef79c47ec2c55793c06ad4f67"
+  integrity sha512-eAzPv5osDmZyBhou8PoF4i6RQXAfeKL9tjb3QzYuccXFMQU0ruIc/POh30ePnaOyD1UXdlKguHBmsTs53tVoPw==
+
+"@parcel/watcher-darwin-x64@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-darwin-x64/-/watcher-darwin-x64-2.5.1.tgz#99f3af3869069ccf774e4ddfccf7e64fd2311ef8"
+  integrity sha512-1ZXDthrnNmwv10A0/3AJNZ9JGlzrF82i3gNQcWOzd7nJ8aj+ILyW1MTxVk35Db0u91oD5Nlk9MBiujMlwmeXZg==
+
+"@parcel/watcher-freebsd-x64@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-freebsd-x64/-/watcher-freebsd-x64-2.5.1.tgz#14d6857741a9f51dfe51d5b08b7c8afdbc73ad9b"
+  integrity sha512-SI4eljM7Flp9yPuKi8W0ird8TI/JK6CSxju3NojVI6BjHsTyK7zxA9urjVjEKJ5MBYC+bLmMcbAWlZ+rFkLpJQ==
+
+"@parcel/watcher-linux-arm-glibc@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-linux-arm-glibc/-/watcher-linux-arm-glibc-2.5.1.tgz#43c3246d6892381db473bb4f663229ad20b609a1"
+  integrity sha512-RCdZlEyTs8geyBkkcnPWvtXLY44BCeZKmGYRtSgtwwnHR4dxfHRG3gR99XdMEdQ7KeiDdasJwwvNSF5jKtDwdA==
+
+"@parcel/watcher-linux-arm-musl@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-linux-arm-musl/-/watcher-linux-arm-musl-2.5.1.tgz#663750f7090bb6278d2210de643eb8a3f780d08e"
+  integrity sha512-6E+m/Mm1t1yhB8X412stiKFG3XykmgdIOqhjWj+VL8oHkKABfu/gjFj8DvLrYVHSBNC+/u5PeNrujiSQ1zwd1Q==
+
+"@parcel/watcher-linux-arm64-glibc@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-linux-arm64-glibc/-/watcher-linux-arm64-glibc-2.5.1.tgz#ba60e1f56977f7e47cd7e31ad65d15fdcbd07e30"
+  integrity sha512-LrGp+f02yU3BN9A+DGuY3v3bmnFUggAITBGriZHUREfNEzZh/GO06FF5u2kx8x+GBEUYfyTGamol4j3m9ANe8w==
+
+"@parcel/watcher-linux-arm64-musl@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-linux-arm64-musl/-/watcher-linux-arm64-musl-2.5.1.tgz#f7fbcdff2f04c526f96eac01f97419a6a99855d2"
+  integrity sha512-cFOjABi92pMYRXS7AcQv9/M1YuKRw8SZniCDw0ssQb/noPkRzA+HBDkwmyOJYp5wXcsTrhxO0zq1U11cK9jsFg==
+
+"@parcel/watcher-linux-x64-glibc@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-linux-x64-glibc/-/watcher-linux-x64-glibc-2.5.1.tgz#4d2ea0f633eb1917d83d483392ce6181b6a92e4e"
+  integrity sha512-GcESn8NZySmfwlTsIur+49yDqSny2IhPeZfXunQi48DMugKeZ7uy1FX83pO0X22sHntJ4Ub+9k34XQCX+oHt2A==
+
+"@parcel/watcher-linux-x64-musl@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-linux-x64-musl/-/watcher-linux-x64-musl-2.5.1.tgz#277b346b05db54f55657301dd77bdf99d63606ee"
+  integrity sha512-n0E2EQbatQ3bXhcH2D1XIAANAcTZkQICBPVaxMeaCVBtOpBZpWJuf7LwyWPSBDITb7In8mqQgJ7gH8CILCURXg==
+
+"@parcel/watcher-win32-arm64@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-win32-arm64/-/watcher-win32-arm64-2.5.1.tgz#7e9e02a26784d47503de1d10e8eab6cceb524243"
+  integrity sha512-RFzklRvmc3PkjKjry3hLF9wD7ppR4AKcWNzH7kXR7GUe0Igb3Nz8fyPwtZCSquGrhU5HhUNDr/mKBqj7tqA2Vw==
+
+"@parcel/watcher-win32-ia32@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/@parcel/watcher-win32-ia32/-/watcher-win32-ia32-2.5.1.tgz#2d0f94fa59a873cdc584bf7f6b1dc628ddf976e6"
+  integrity sha512-c2KkcVN+NJmuA7CGlaGD1qJh1cLfDnQsHjE89E60vUEMlqduHGCdCLJCID5geFVM0dOtA3ZiIO8BoEQmzQVfpQ==
 
 "@parcel/watcher-win32-x64@2.5.1":
   version "2.5.1"
@@ -435,6 +720,101 @@
     "@types/estree" "^1.0.0"
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
+
+"@rollup/rollup-android-arm-eabi@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.39.0.tgz#1d8cc5dd3d8ffe569d8f7f67a45c7909828a0f66"
+  integrity sha512-lGVys55Qb00Wvh8DMAocp5kIcaNzEFTmGhfFd88LfaogYTRKrdxgtlO5H6S49v2Nd8R2C6wLOal0qv6/kCkOwA==
+
+"@rollup/rollup-android-arm64@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.39.0.tgz#9c136034d3d9ed29d0b138c74dd63c5744507fca"
+  integrity sha512-It9+M1zE31KWfqh/0cJLrrsCPiF72PoJjIChLX+rEcujVRCb4NLQ5QzFkzIZW8Kn8FTbvGQBY5TkKBau3S8cCQ==
+
+"@rollup/rollup-darwin-arm64@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.39.0.tgz#830d07794d6a407c12b484b8cf71affd4d3800a6"
+  integrity sha512-lXQnhpFDOKDXiGxsU9/l8UEGGM65comrQuZ+lDcGUx+9YQ9dKpF3rSEGepyeR5AHZ0b5RgiligsBhWZfSSQh8Q==
+
+"@rollup/rollup-darwin-x64@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.39.0.tgz#b26f0f47005c1fa5419a880f323ed509dc8d885c"
+  integrity sha512-mKXpNZLvtEbgu6WCkNij7CGycdw9cJi2k9v0noMb++Vab12GZjFgUXD69ilAbBh034Zwn95c2PNSz9xM7KYEAQ==
+
+"@rollup/rollup-freebsd-arm64@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.39.0.tgz#2b60c81ac01ff7d1bc8df66aee7808b6690c6d19"
+  integrity sha512-jivRRlh2Lod/KvDZx2zUR+I4iBfHcu2V/BA2vasUtdtTN2Uk3jfcZczLa81ESHZHPHy4ih3T/W5rPFZ/hX7RtQ==
+
+"@rollup/rollup-freebsd-x64@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.39.0.tgz#4826af30f4d933d82221289068846c9629cc628c"
+  integrity sha512-8RXIWvYIRK9nO+bhVz8DwLBepcptw633gv/QT4015CpJ0Ht8punmoHU/DuEd3iw9Hr8UwUV+t+VNNuZIWYeY7Q==
+
+"@rollup/rollup-linux-arm-gnueabihf@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.39.0.tgz#a1f4f963d5dcc9e5575c7acf9911824806436bf7"
+  integrity sha512-mz5POx5Zu58f2xAG5RaRRhp3IZDK7zXGk5sdEDj4o96HeaXhlUwmLFzNlc4hCQi5sGdR12VDgEUqVSHer0lI9g==
+
+"@rollup/rollup-linux-arm-musleabihf@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.39.0.tgz#e924b0a8b7c400089146f6278446e6b398b75a06"
+  integrity sha512-+YDwhM6gUAyakl0CD+bMFpdmwIoRDzZYaTWV3SDRBGkMU/VpIBYXXEvkEcTagw/7VVkL2vA29zU4UVy1mP0/Yw==
+
+"@rollup/rollup-linux-arm64-gnu@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.39.0.tgz#cb43303274ec9a716f4440b01ab4e20c23aebe20"
+  integrity sha512-EKf7iF7aK36eEChvlgxGnk7pdJfzfQbNvGV/+l98iiMwU23MwvmV0Ty3pJ0p5WQfm3JRHOytSIqD9LB7Bq7xdQ==
+
+"@rollup/rollup-linux-arm64-musl@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.39.0.tgz#531c92533ce3d167f2111bfcd2aa1a2041266987"
+  integrity sha512-vYanR6MtqC7Z2SNr8gzVnzUul09Wi1kZqJaek3KcIlI/wq5Xtq4ZPIZ0Mr/st/sv/NnaPwy/D4yXg5x0B3aUUA==
+
+"@rollup/rollup-linux-loongarch64-gnu@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-loongarch64-gnu/-/rollup-linux-loongarch64-gnu-4.39.0.tgz#53403889755d0c37c92650aad016d5b06c1b061a"
+  integrity sha512-NMRUT40+h0FBa5fb+cpxtZoGAggRem16ocVKIv5gDB5uLDgBIwrIsXlGqYbLwW8YyO3WVTk1FkFDjMETYlDqiw==
+
+"@rollup/rollup-linux-powerpc64le-gnu@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-powerpc64le-gnu/-/rollup-linux-powerpc64le-gnu-4.39.0.tgz#f669f162e29094c819c509e99dbeced58fc708f9"
+  integrity sha512-0pCNnmxgduJ3YRt+D+kJ6Ai/r+TaePu9ZLENl+ZDV/CdVczXl95CbIiwwswu4L+K7uOIGf6tMo2vm8uadRaICQ==
+
+"@rollup/rollup-linux-riscv64-gnu@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.39.0.tgz#4bab37353b11bcda5a74ca11b99dea929657fd5f"
+  integrity sha512-t7j5Zhr7S4bBtksT73bO6c3Qa2AV/HqiGlj9+KB3gNF5upcVkx+HLgxTm8DK4OkzsOYqbdqbLKwvGMhylJCPhQ==
+
+"@rollup/rollup-linux-riscv64-musl@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.39.0.tgz#4d66be1ce3cfd40a7910eb34dddc7cbd4c2dd2a5"
+  integrity sha512-m6cwI86IvQ7M93MQ2RF5SP8tUjD39Y7rjb1qjHgYh28uAPVU8+k/xYWvxRO3/tBN2pZkSMa5RjnPuUIbrwVxeA==
+
+"@rollup/rollup-linux-s390x-gnu@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.39.0.tgz#7181c329395ed53340a0c59678ad304a99627f6d"
+  integrity sha512-iRDJd2ebMunnk2rsSBYlsptCyuINvxUfGwOUldjv5M4tpa93K8tFMeYGpNk2+Nxl+OBJnBzy2/JCscGeO507kA==
+
+"@rollup/rollup-linux-x64-gnu@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.39.0.tgz#00825b3458094d5c27cb4ed66e88bfe9f1e65f90"
+  integrity sha512-t9jqYw27R6Lx0XKfEFe5vUeEJ5pF3SGIM6gTfONSMb7DuG6z6wfj2yjcoZxHg129veTqU7+wOhY6GX8wmf90dA==
+
+"@rollup/rollup-linux-x64-musl@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.39.0.tgz#81caac2a31b8754186f3acc142953a178fcd6fba"
+  integrity sha512-ThFdkrFDP55AIsIZDKSBWEt/JcWlCzydbZHinZ0F/r1h83qbGeenCt/G/wG2O0reuENDD2tawfAj2s8VK7Bugg==
+
+"@rollup/rollup-win32-arm64-msvc@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.39.0.tgz#3a3f421f5ce9bd99ed20ce1660cce7cee3e9f199"
+  integrity sha512-jDrLm6yUtbOg2TYB3sBF3acUnAwsIksEYjLeHL+TJv9jg+TmTwdyjnDex27jqEMakNKf3RwwPahDIt7QXCSqRQ==
+
+"@rollup/rollup-win32-ia32-msvc@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.39.0.tgz#a44972d5cdd484dfd9cf3705a884bf0c2b7785a7"
+  integrity sha512-6w9uMuza+LbLCVoNKL5FSLE7yvYkq9laSd09bwS0tMjkwXrmib/4KmoJcrKhLWHvw19mwU+33ndC69T7weNNjQ==
 
 "@rollup/rollup-win32-x64-msvc@4.39.0":
   version "4.39.0"
@@ -542,7 +922,7 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/estree@^1.0.0", "@types/estree@1.0.7":
+"@types/estree@1.0.7", "@types/estree@^1.0.0":
   version "1.0.7"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@types/estree/-/estree-1.0.7.tgz"
   integrity sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==
@@ -573,7 +953,7 @@
   dependencies:
     "@types/unist" "*"
 
-"@types/node@*", "@types/node@^18.0.0 || >=20.0.0":
+"@types/node@*":
   version "22.14.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@types/node/-/node-22.14.0.tgz"
   integrity sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==
@@ -613,7 +993,7 @@
     vscode-languageserver-textdocument "^1.0.11"
     vscode-uri "^3.0.8"
 
-"@volar/language-core@~2.4.7", "@volar/language-core@2.4.12":
+"@volar/language-core@2.4.12", "@volar/language-core@~2.4.7":
   version "2.4.12"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@volar/language-core/-/language-core-2.4.12.tgz"
   integrity sha512-RLrFdXEaQBWfSnYGVxvR2WrO6Bub0unkdHYIdC31HzIEqATIuuhRRzYu76iGPZ6OtA4Au1SnW0ZwIqPP217YhA==
@@ -635,7 +1015,7 @@
     vscode-languageserver-textdocument "^1.0.11"
     vscode-uri "^3.0.8"
 
-"@volar/language-service@~2.4.0", "@volar/language-service@~2.4.7", "@volar/language-service@2.4.12":
+"@volar/language-service@2.4.12", "@volar/language-service@~2.4.7":
   version "2.4.12"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@volar/language-service/-/language-service-2.4.12.tgz"
   integrity sha512-nifOPGYYPnCmxja6/ML/Gl2EgFkUdw4gLbYqbh8FjqX3gSpXSZl/0ebqORjKo1KW56YWHWRZd1jFutEtCiRYhA==
@@ -736,15 +1116,7 @@ argparse@^2.0.1:
   resolved "https://mirrors.huaweicloud.com/repository/npm/argparse/-/argparse-2.0.1.tgz"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
-"argparse@~ 0.1.15":
-  version "0.1.16"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/argparse/-/argparse-0.1.16.tgz"
-  integrity sha512-LjmC2dNpdn2L4UzyoaIr11ELYoLn37ZFy9zObrQFHsSuOepeUEMKnM8w5KL4Tnrp2gy88rRuQt6Ky8Bjml+Baw==
-  dependencies:
-    underscore "~1.7.0"
-    underscore.string "~2.4.0"
-
-argparse@~0.1.15:
+"argparse@~ 0.1.15", argparse@~0.1.15:
   version "0.1.16"
   resolved "https://mirrors.huaweicloud.com/repository/npm/argparse/-/argparse-0.1.16.tgz"
   integrity sha512-LjmC2dNpdn2L4UzyoaIr11ELYoLn37ZFy9zObrQFHsSuOepeUEMKnM8w5KL4Tnrp2gy88rRuQt6Ky8Bjml+Baw==
@@ -868,7 +1240,7 @@ braces@^3.0.3:
   dependencies:
     fill-range "^7.1.1"
 
-browserslist@^4.24.0, "browserslist@>= 4.21.0":
+browserslist@^4.24.0:
   version "4.24.4"
   resolved "https://mirrors.huaweicloud.com/repository/npm/browserslist/-/browserslist-4.24.4.tgz"
   integrity sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==
@@ -1267,6 +1639,11 @@ fonts-streamline@^0.0.6:
     ttf2eot "~1.3.0"
     ttf2woff "~1.3.0"
 
+fsevents@~2.3.2, fsevents@~2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npmmirror.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
+
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://mirrors.huaweicloud.com/repository/npm/gensync/-/gensync-1.0.0-beta.2.tgz"
@@ -1619,15 +1996,15 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-"lodash@~ 2.1.0":
-  version "2.1.0"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/lodash/-/lodash-2.1.0.tgz"
-  integrity sha512-5BzuEUmAfrZX28Zv3p6KKyIl3SnswGZblKJA3O20ZUDfBkqlXv87oMvmTsiQnM9g0dVXVOtKTuIIg7cnAGZICA==
-
 lodash@4.17.21:
   version "4.17.21"
   resolved "https://mirrors.huaweicloud.com/repository/npm/lodash/-/lodash-4.17.21.tgz"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
+"lodash@~ 2.1.0":
+  version "2.1.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/lodash/-/lodash-2.1.0.tgz"
+  integrity sha512-5BzuEUmAfrZX28Zv3p6KKyIl3SnswGZblKJA3O20ZUDfBkqlXv87oMvmTsiQnM9g0dVXVOtKTuIIg7cnAGZICA==
 
 log-symbols@^6.0.0:
   version "6.0.0"
@@ -2306,11 +2683,6 @@ preferred-pm@^4.0.0:
     find-yarn-workspace-root2 "1.2.16"
     which-pm "^3.0.1"
 
-"prettier@^2.2 || ^3.0", prettier@^3.0.0:
-  version "3.5.3"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/prettier/-/prettier-3.5.3.tgz"
-  integrity sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==
-
 prettier@2.8.7:
   version "2.8.7"
   resolved "https://mirrors.huaweicloud.com/repository/npm/prettier/-/prettier-2.8.7.tgz"
@@ -2354,17 +2726,7 @@ readable-stream@^1.0.26-2, readable-stream@^1.0.27-1:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@~1.0.26-3:
-  version "1.0.34"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/readable-stream/-/readable-stream-1.0.34.tgz"
-  integrity sha512-ok1qVCJuRkNmvebYikljxJA/UEsKwLl2nI1OmaqAu4/UE+h0wKCHok4XkL/gvi39OacXvw59RJUOFUkDib2rHg==
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
-
-readable-stream@~1.0.33:
+readable-stream@~1.0.26-3, readable-stream@~1.0.33:
   version "1.0.34"
   resolved "https://mirrors.huaweicloud.com/repository/npm/readable-stream/-/readable-stream-1.0.34.tgz"
   integrity sha512-ok1qVCJuRkNmvebYikljxJA/UEsKwLl2nI1OmaqAu4/UE+h0wKCHok4XkL/gvi39OacXvw59RJUOFUkDib2rHg==
@@ -2558,7 +2920,7 @@ reusify@^1.0.4:
   resolved "https://mirrors.huaweicloud.com/repository/npm/reusify/-/reusify-1.1.0.tgz"
   integrity sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==
 
-rollup@^1.20.0||^2.0.0||^3.0.0||^4.0.0, rollup@^4.20.0:
+rollup@^4.20.0:
   version "4.39.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/rollup/-/rollup-4.39.0.tgz"
   integrity sha512-thI8kNc02yNvnmJp8dr3fNWJ9tCONDhp6TV35X6HkKGGs9E6q7YWCHbe5vKiTa7TAiNcFEmXKj3X/pG2b3ci0g==
@@ -2594,7 +2956,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-sass@*, sass@^1.79.4:
+sass@^1.79.4:
   version "1.86.2"
   resolved "https://mirrors.huaweicloud.com/repository/npm/sass/-/sass-1.86.2.tgz"
   integrity sha512-Rpfn0zAIDqvnSb2DihJTDFjbhqLHu91Wqac9rxontWk7R+2txcPjuujMqu1eeoezh5kAblVCS5EdFdyr0Jmu+w==
@@ -2605,15 +2967,15 @@ sass@*, sass@^1.79.4:
   optionalDependencies:
     "@parcel/watcher" "^2.4.1"
 
-sax@^1.2.4:
-  version "1.4.1"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/sax/-/sax-1.4.1.tgz"
-  integrity sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==
-
 sax@0.6.x:
   version "0.6.1"
   resolved "https://mirrors.huaweicloud.com/repository/npm/sax/-/sax-0.6.1.tgz"
   integrity sha512-8ip+qnRh7m8OEyvoM1JoSBzlrepp3ajVR8nqgrfTig+TewfyvTijl0am8/anFqgbcdz62ofEUKE1hHNDCdbeSQ==
+
+sax@^1.2.4:
+  version "1.4.1"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/sax/-/sax-1.4.1.tgz"
+  integrity sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==
 
 section-matter@^1.0.0:
   version "1.0.0"
@@ -2703,7 +3065,7 @@ sitemap@^8.0.0:
     arg "^5.0.0"
     sax "^1.2.4"
 
-source-map-js@^1.2.0, source-map-js@^1.2.1, "source-map-js@>=0.6.2 <2.0.0":
+"source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.2.0, source-map-js@^1.2.1:
   version "1.2.1"
   resolved "https://mirrors.huaweicloud.com/repository/npm/source-map-js/-/source-map-js-1.2.1.tgz"
   integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
@@ -2736,11 +3098,6 @@ streamqueue@^0.1.1:
     isstream "~0.1.1"
     readable-stream "~1.0.33"
 
-string_decoder@~0.10.x:
-  version "0.10.31"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/string_decoder/-/string_decoder-0.10.31.tgz"
-  integrity sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==
-
 string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://mirrors.huaweicloud.com/repository/npm/string-width/-/string-width-4.2.3.tgz"
@@ -2750,7 +3107,7 @@ string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.1"
 
-string-width@^7.0.0:
+string-width@^7.0.0, string-width@^7.2.0:
   version "7.2.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/string-width/-/string-width-7.2.0.tgz"
   integrity sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==
@@ -2759,14 +3116,10 @@ string-width@^7.0.0:
     get-east-asian-width "^1.0.0"
     strip-ansi "^7.1.0"
 
-string-width@^7.2.0:
-  version "7.2.0"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/string-width/-/string-width-7.2.0.tgz"
-  integrity sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==
-  dependencies:
-    emoji-regex "^10.3.0"
-    get-east-asian-width "^1.0.0"
-    strip-ansi "^7.1.0"
+string_decoder@~0.10.x:
+  version "0.10.31"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/string_decoder/-/string_decoder-0.10.31.tgz"
+  integrity sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==
 
 stringify-entities@^4.0.0:
   version "4.0.4"
@@ -2874,6 +3227,11 @@ tsconfck@^3.1.4:
   resolved "https://mirrors.huaweicloud.com/repository/npm/tsconfck/-/tsconfck-3.1.5.tgz"
   integrity sha512-CLDfGgUp7XPswWnezWwsCRxNmgQjhYq3VXHM0/XIRxhVrKw0M1if9agzryh1QS3nxjCROvV+xWxoJO1YctzzWg==
 
+tslib@^2.4.0:
+  version "2.8.1"
+  resolved "https://registry.npmmirror.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
+  integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
+
 ttf2eot@~1.3.0:
   version "1.3.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/ttf2eot/-/ttf2eot-1.3.0.tgz"
@@ -2906,7 +3264,7 @@ typescript-auto-import-cache@^0.3.3:
   dependencies:
     semver "^7.3.8"
 
-typescript@*, "typescript@^4.9.4 || ^5.0.2", typescript@^5.0.0, typescript@^5.6.2:
+typescript@^5.6.2:
   version "5.8.2"
   resolved "https://mirrors.huaweicloud.com/repository/npm/typescript/-/typescript-5.8.2.tgz"
   integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
@@ -3040,7 +3398,7 @@ vfile@^6.0.0, vfile@^6.0.3:
     "@types/unist" "^3.0.0"
     vfile-message "^4.0.0"
 
-"vite@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0", vite@^5.4.11:
+vite@^5.4.11:
   version "5.4.16"
   resolved "https://mirrors.huaweicloud.com/repository/npm/vite/-/vite-5.4.16.tgz"
   integrity sha512-Y5gnfp4NemVfgOTDQAunSD4346fal44L9mszGGY/e+qxsRT5y1sMlS/8tiQ8AFAp+MFgYNSINdfEchJiPm41vQ==
@@ -3159,14 +3517,6 @@ vscode-jsonrpc@8.2.0:
   resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-jsonrpc/-/vscode-jsonrpc-8.2.0.tgz"
   integrity sha512-C+r0eKJUIfiDIfwJhria30+TYWPtuHJXHtI7J0YlOmKAo7ogxP20T0zxB7HZQIFhIyvoBPwWskjxrvAtfjyZfA==
 
-vscode-languageserver-protocol@^3.17.5, vscode-languageserver-protocol@3.17.5:
-  version "3.17.5"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-languageserver-protocol/-/vscode-languageserver-protocol-3.17.5.tgz"
-  integrity sha512-mb1bvRJN8SVznADSGWM9u/b07H7Ecg0I3OgXDuLdn307rl/J3A9YD6/eYOssqhecL27hK1IPZAsaqh00i/Jljg==
-  dependencies:
-    vscode-jsonrpc "8.2.0"
-    vscode-languageserver-types "3.17.5"
-
 vscode-languageserver-protocol@3.16.0:
   version "3.16.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-languageserver-protocol/-/vscode-languageserver-protocol-3.16.0.tgz"
@@ -3175,20 +3525,28 @@ vscode-languageserver-protocol@3.16.0:
     vscode-jsonrpc "6.0.0"
     vscode-languageserver-types "3.16.0"
 
+vscode-languageserver-protocol@3.17.5, vscode-languageserver-protocol@^3.17.5:
+  version "3.17.5"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-languageserver-protocol/-/vscode-languageserver-protocol-3.17.5.tgz"
+  integrity sha512-mb1bvRJN8SVznADSGWM9u/b07H7Ecg0I3OgXDuLdn307rl/J3A9YD6/eYOssqhecL27hK1IPZAsaqh00i/Jljg==
+  dependencies:
+    vscode-jsonrpc "8.2.0"
+    vscode-languageserver-types "3.17.5"
+
 vscode-languageserver-textdocument@^1.0.1, vscode-languageserver-textdocument@^1.0.11, vscode-languageserver-textdocument@^1.0.12:
   version "1.0.12"
   resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.12.tgz"
   integrity sha512-cxWNPesCnQCcMPeenjKKsOCKQZ/L6Tv19DTRIGuLWe32lyzWhihGVJ/rcckZXJxfdKCFvRLS3fpBIsV/ZGX4zA==
 
-vscode-languageserver-types@^3.15.1, vscode-languageserver-types@^3.16.0, vscode-languageserver-types@^3.17.5, vscode-languageserver-types@3.17.5:
-  version "3.17.5"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-languageserver-types/-/vscode-languageserver-types-3.17.5.tgz"
-  integrity sha512-Ld1VelNuX9pdF39h2Hgaeb5hEZM2Z3jUrrMgWQAu82jMtZp7p3vJT3BzToKtZI7NgQssZje5o0zryOrhQvzQAg==
-
 vscode-languageserver-types@3.16.0:
   version "3.16.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-languageserver-types/-/vscode-languageserver-types-3.16.0.tgz"
   integrity sha512-k8luDIWJWyenLc5ToFQQMaSrqCHiLwyKPHKPQZ5zz21vM+vIVUSvsRpcbiECH4WR88K2XZqc4ScRcZ7nk/jbeA==
+
+vscode-languageserver-types@3.17.5, vscode-languageserver-types@^3.15.1, vscode-languageserver-types@^3.16.0, vscode-languageserver-types@^3.17.5:
+  version "3.17.5"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/vscode-languageserver-types/-/vscode-languageserver-types-3.17.5.tgz"
+  integrity sha512-Ld1VelNuX9pdF39h2Hgaeb5hEZM2Z3jUrrMgWQAu82jMtZp7p3vJT3BzToKtZI7NgQssZje5o0zryOrhQvzQAg==
 
 vscode-languageserver@^7.0.0:
   version "7.0.0"
@@ -3294,15 +3652,15 @@ yaml-language-server@~1.15.0:
   optionalDependencies:
     prettier "2.8.7"
 
-yaml@^2.5.0:
-  version "2.7.1"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/yaml/-/yaml-2.7.1.tgz"
-  integrity sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==
-
 yaml@2.2.2:
   version "2.2.2"
   resolved "https://mirrors.huaweicloud.com/repository/npm/yaml/-/yaml-2.2.2.tgz"
   integrity sha512-CBKFWExMn46Foo4cldiChEzn7S7SRV+wqiluAb6xmueD/fGyRHIhX8m14vVGgeFWjN540nKCNVj6P21eQjgTuA==
+
+yaml@^2.5.0:
+  version "2.7.1"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/yaml/-/yaml-2.7.1.tgz"
+  integrity sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==
 
 yargs-parser@^21.1.1:
   version "21.1.1"
@@ -3337,7 +3695,7 @@ zod-to-ts@^1.2.0:
   resolved "https://mirrors.huaweicloud.com/repository/npm/zod-to-ts/-/zod-to-ts-1.2.0.tgz"
   integrity sha512-x30XE43V+InwGpvTySRNz9kB7qFU8DlyEy7BsSTCHPH1R0QasMmHWZDCzYm6bVXtj/9NNJAZF3jW8rzFvH5OFA==
 
-zod@^3, zod@^3.23.8, zod@^3.24.1, zod@^3.24.2:
+zod@^3.23.8, zod@^3.24.2:
   version "3.24.2"
   resolved "https://mirrors.huaweicloud.com/repository/npm/zod/-/zod-3.24.2.tgz"
   integrity sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==
