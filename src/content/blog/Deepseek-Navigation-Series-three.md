@@ -1,7 +1,7 @@
 ---
 title: Deepseek导航（三）
 description: '探索Deepseek API导航，发现最新的AI接口服务和云厂商资源，助您快速接入和使用DeepSeek人工智能技术。'
-publishDate: 2024-01-11 14:32:00
+publishDate: 2025-01-11 14:32:00
 # img: /assets/stock.jpg 可配置文章封面
 # img_alt: stock
 tags:
@@ -213,7 +213,7 @@ tags:
 </div>
 
 <div class="ai-card" data-tags="gift">
-  <a href="https://marketing.qiniu.com/activity/2024-1111-act" target="_blank" class="card-link">
+  <a href="https://marketing.qiniu.com/activity/2025-1111-act" target="_blank" class="card-link">
     <div class="card-image">
       <img src="https://deepseek404.com/wp-content/uploads/2025/03/qiniu.png" alt="七牛云">
     </div>
@@ -615,6 +615,10 @@ tags:
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+.card-link:hover {
+  text-decoration: none;  /* 确保悬浮时也没有下划线 */
 }
 
 /* 减小卡片内部间距 */

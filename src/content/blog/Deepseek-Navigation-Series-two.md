@@ -1,7 +1,7 @@
 ---
 title: Deepseek导航（二）
 description: '探索DeepSeek客户端导航，发现最新的AI客户端工具、资源和应用，助您快速部署和使用DeepSeek模型。'
-publishDate: 2024-01-10 14:32:00
+publishDate: 2025-01-10 14:32:00
 # img: /assets/stock.jpg 可配置文章封面
 # img_alt: stock
 tags:
@@ -642,6 +642,10 @@ tags:
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+.card-link:hover {
+  text-decoration: none;  /* 确保悬浮时也没有下划线 */
 }
 
 /* 减小卡片内部间距 */

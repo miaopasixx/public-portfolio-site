@@ -1,7 +1,7 @@
 ---
 title: Deepseek导航（一）
 description: '探索Deepseek AI导航，发现最新的AI工具、资源和应用，助您快速了解和使用人工智能技术。'
-publishDate: 2024-01-09 14:32:00
+publishDate: 2025-01-09 14:32:00
 # img: /assets/stock.jpg 可配置文章封面
 # img_alt: stock
 tags:
@@ -95,7 +95,7 @@ tags:
 </div>
 
 <div class="ai-card" data-tags="full free online">
-  <a href="https://www.wenxiaobai.com/?forceLogin=true&source=xiaoyi&ad_source=xiaoyi" target="_blank" class="card-link">
+  <a href="https://www.wenxiaobai.com/" target="_blank" class="card-link">
     <div class="card-image">
       <img src="https://deepseek404.com/wp-content/uploads/2025/03/wsb.png" alt="问小白">
     </div>
@@ -485,8 +485,6 @@ tags:
   </a>
 </div>
 
-<!-- ... 现有代码 ... -->
-
 <style>
 /* 筛选按钮样式 */
 .filter-container {
@@ -548,9 +546,13 @@ tags:
 }
 
 .card-link {
-  text-decoration: none;
+  text-decoration: none;  /* 确保卡片链接没有下划线 */
   color: inherit;
   display: block;
+}
+
+.card-link:hover {
+  text-decoration: none;  /* 确保悬浮时也没有下划线 */
 }
 
 /* 减小卡片内部间距 */
@@ -643,8 +645,6 @@ tags:
 }
 </style>
 
-<!-- ... 现有代码 ... -->
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const filterButtons = document.querySelectorAll('.filter-btn');
@@ -676,3 +676,50 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .ai-tools-container {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+  }
+  
+  .filter-container {
+    justify-content: flex-start;
+  }
+  
+  .card-image img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-tools-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .card-image img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .card-content h5 {
+    font-size: 14px;
+  }
+  
+  .tag {
+    font-size: 10px;
+    padding: 1px 4px;
+  }
+}
+
+/* 全局去除所有链接的下划线，包括悬浮状态 */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

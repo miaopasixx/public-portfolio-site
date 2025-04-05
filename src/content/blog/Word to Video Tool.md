@@ -1,6 +1,6 @@
 ---
 title: Word转视频新选择：一键生成，轻松搞定
-publishDate: 2024-03-04
+publishDate: 2025-03-04
 read: 12
 description: 这款word转视频工具，打字即可生成视频，支持批量操作、多种素材添加、多角色配音及丰富功能应用，极大提升办公效率。
 tags:
