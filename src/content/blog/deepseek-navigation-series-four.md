@@ -217,6 +217,22 @@ tags:
   </a>
 </div>
 
+<div class="ai-card" data-tags="recommend china nologin">
+  <a href="https://ask.xiaoyuzhoufm.com/" target="_blank" class="card-link">
+    <div class="card-image">
+      <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://ask.xiaoyuzhoufm.com/" alt="Hika AI">
+    </div>
+    <div class="card-content">
+      <h5>小宇宙</h5>
+      <div class="tags">
+        <span class="tag recommend">推荐</span>
+        <span class="tag">国内</span>
+        <span class="tag">免登录</span>
+      </div>
+    </div>
+  </a>
+</div>
+
 <div class="ai-card" data-tags="china  nologin">
   <a href="https://explorer.globe.engineer/" target="_blank" class="card-link">
     <div class="card-image">
@@ -233,12 +249,68 @@ tags:
 </div>
 
 <div class="ai-card" data-tags="china">
+  <a href="https://felo.ai/search/" target="_blank" class="card-link">
+    <div class="card-image">
+      <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://felo.ai/search" alt="Globe Explorer">
+    </div>
+    <div class="card-content">
+      <h5>Felo</h5>
+      <div class="tags">
+        <span class="tag">国内</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="ai-card" data-tags="china">
+  <a href="https://reportify.cn/" target="_blank" class="card-link">
+    <div class="card-image">
+      <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://reportify.cn/" alt="Globe Explorer">
+    </div>
+    <div class="card-content">
+      <h5>Reportify</h5>
+      <div class="tags">
+        <span class="tag">国内</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="ai-card" data-tags="china">
   <a href="https://hika.fyi/search" target="_blank" class="card-link">
     <div class="card-image">
       <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://hika.fyi/" alt="Hika AI">
     </div>
     <div class="card-content">
       <h5>Hika AI</h5>
+      <div class="tags">
+        <span class="tag">国内</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="ai-card" data-tags="china">
+  <a href="https://www.hellomiku.com/index" target="_blank" class="card-link">
+    <div class="card-image">
+      <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://www.hellomiku.com/index" alt="Hika AI">
+    </div>
+    <div class="card-content">
+      <h5>HelloMiku</h5>
+      <div class="tags">
+        <span class="tag">国内</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="ai-card" data-tags="china">
+  <a href="https://iflow.cn/" target="_blank" class="card-link">
+    <div class="card-image">
+      <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://iflow.cn/" alt="Hika AI">
+    </div>
+    <div class="card-content">
+      <h5>心流</h5>
       <div class="tags">
         <span class="tag">国内</span>
       </div>
@@ -275,6 +347,20 @@ tags:
   </a>
 </div>
 
+<div class="ai-card" data-tags="china">
+  <a href="https://zhida.zhihu.com/" target="_blank" class="card-link">
+    <div class="card-image">
+      <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://zhida.zhihu.com/" alt="知乎直答">
+    </div>
+    <div class="card-content">
+      <h5>知乎直答</h5>
+      <div class="tags">
+        <span class="tag">国内</span>
+      </div>
+    </div>
+  </a>
+</div>
+
 <div class="ai-card" data-tags="global nologin">
   <a href="https://www.perplexity.ai/" target="_blank" class="card-link">
     <div class="card-image">
@@ -285,20 +371,6 @@ tags:
       <div class="tags">
         <span class="tag">全球</span>
         <span class="tag">免登录</span>
-      </div>
-    </div>
-  </a>
-</div>
-
-<div class="ai-card" data-tags="china">
-  <a href="https://zhida.zhihu.com/" target="_blank" class="card-link">
-    <div class="card-image">
-      <img src="https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url=https://zhida.zhihu.com/" alt="知乎直答">
-    </div>
-    <div class="card-content">
-      <h5>知乎直答</h5>
-      <div class="tags">
-        <span class="tag">国内</span>
       </div>
     </div>
   </a>
