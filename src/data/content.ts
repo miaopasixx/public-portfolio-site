@@ -18,7 +18,7 @@ export const nav: Nav = {
         { label: '项目', href: '/project', target: '_self' },
         { label: '关于', href: '/about', target: '_self' },
         { label: '博客', href: '/blog', target: '_self' },
-		{ label: '技术↗', href: 'https://miaopasixx.github.io/web_tool/', target: '_blank' },
+		{ label: '技术↗', href: 'https://tools-doc.netlify.app/', target: '_blank' },
     ],
 };
 
