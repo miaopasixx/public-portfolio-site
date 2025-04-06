@@ -154,6 +154,7 @@ export const filterItems: FilterItem[] = [
 	{ content: "网页", dataGroup: "web" },
 	{ content: "AI", dataGroup: "ai" },
 	{ content: "DeepSeek", dataGroup: "deepseek" },
+	{ content: "绘画", dataGroup: "drawing" },
 	{ content: "客户端", dataGroup: "client" },
 	{ content: "搜索引擎", dataGroup: "search-engine" },
 	{ content: "Api", dataGroup: "api" },

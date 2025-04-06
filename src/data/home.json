@@ -8,7 +8,7 @@
 		"desc": "阿勒泰旅行记录",
 		"category": "photography",
 		"tag": "摄影",
-		"date": "2024-07-05"
+		"date": "2025-01-01"
 	},
 	{
 		"id": "2",
@@ -17,28 +17,27 @@
 		"desc": "Blender, Cloud",
 		"category": "3d",
 		"tag": "3D",
-		"date": "2024-07-05"
+		"date": "2025-01-01"
 	},
 	{
 		"id": "3",
 		"cover": "/assets/cover/cover-travel.jpg",
 		"title": "【示例】Tink 旅行生活日记",
 		"desc": "Mobile 网站",
-		"detail": "/detail/tinklife",
 		"category": "ui",
 		"tag": "UI",
-		"date": "2024-10-07"
+		"date": "2025-01-01"
 	},
 	{
 		"id": "4",
-		"cover": "/assets/cover/cover-free-3d-valentines-assets.jpg",
-		"title": "【示例】Valentine's Day 3D Icons",
-		"desc": "Free 3D Icons Pack",
-		"url": "https://valentine.uiuxdeck.com/",
-		"detail": "/detail/free-3d-valentines-assets/",
-		"category":  "web,3d",
-		"tag": "3D",
-		"date": "2024-10-8"
+		"cover": "/assets/blog/ai-drawing-tools-navigation.png",
+		"title": "AI绘画工具导航",
+		"desc": "AI绘画工具导航",
+		"url": "https://tool.mpsxx.top/blog/ai-drawing-tools-navigation/",
+		"detail": "/blog/ai-drawing-tools-navigation/",
+		"category":  "AI,Web,Client,Drawing",
+		"tag": "ai,web,client,drawing",
+		"date": "2025-01-14"
 	},
 	{
 		"id": "5",
