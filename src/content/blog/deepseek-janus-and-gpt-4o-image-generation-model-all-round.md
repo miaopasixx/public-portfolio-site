@@ -21,9 +21,9 @@ GPT-4o是OpenAI于2025年5月发布的首个全能多模态模型。目前除了
 
 ### 1．**Deepseek Janus使用流程**
 
-1. **在线使用**：访问Deepseek官方指定的在线使用网址。打开网页后，在输入框中清晰、详细地输入图像生成的文本提示，如描述场景、风格、元素等信息。输入完成后，点击生成按钮，等待模型处理并输出图像。操作时需注意提示词的准确性和完整性，以获得理想的图像效果。
+1. **在线使用**：访问Deepseek官方指定的在线使用网址。打开网页后，在输入框中清晰、详细地输入图像生成的文本提示，如描述场景、风格、元素等信息。输入完成后，点击生成按钮，等待模型处理并输出图像。操作时需注意提示词的准确性和完整性，以获得理想的图像效果。
 
-2. **本地使用**：首先从开源渠道获取Deepseek Janus的模型权重。将模型部署到本地服务器或设备上，确保设备具备足够的计算资源。使用相应的开发工具和代码调用模型，输入文本提示进行图像生成。本地使用时要注意环境配置的正确性，以及对模型的性能优化。
+2. **本地使用**：首先从开源渠道获取Deepseek Janus的模型权重。将模型部署到本地服务器或设备上，确保设备具备足够的计算资源。使用相应的开发工具和代码调用模型，输入文本提示进行图像生成。本地使用时要注意环境配置的正确性，以及对模型的性能优化。
 
 ### 2．**GPT-4o使用途径**
 
@@ -33,11 +33,30 @@ GPT-4o有多种使用途径。用户可通过OpenAI的API接入，开发者能�
 
 ### 1．**Deepseek Janus版本迭代**
 
-| 版本名称 | 特点 | 改进之处 |
-|---------|------|----------|
-| Janus | 具备基础的图像生成能力，能根据常见文本提示生成图像，风格较为常规。 | 为后续版本奠定基础，构建了基本的图像生成架构。 |
-| JanusFlow | 生成速度显著提升，能够更高效地处理文本提示并输出图像。同时，图像的细节表现有所增强。 | 优化了模型的计算流程，提高了运行效率，增强了对图像细节的捕捉和呈现能力。 |
-| Janus - Pro | 支持更复杂、多样化的文本提示，生成图像的风格更加丰富，质量进一步提高。 | 扩大了模型的训练数据范围，提升了对复杂语义的理解和图像生成的精准度。 |
+<div style="border: 1px solid rgb(149, 162, 171); border-radius: 5px; overflow: hidden;">
+<table style="border-collapse: collapse; width: 100%;">
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <th style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">版本名称</th>
+    <th style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">特点</th>
+    <th style="padding: 8px; text-align: center;">改进之处</th>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">Janus</td>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">具备基础的图像生成能力，能根据常见文本提示生成图像，风格较为常规。</td>
+    <td style="padding: 8px; text-align: center;">为后续版本奠定基础，构建了基本的图像生成架构。</td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">JanusFlow</td>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">生成速度显著提升，能够更高效地处理文本提示并输出图像。同时，图像的细节表现有所增强。</td>
+    <td style="padding: 8px; text-align: center;">优化了模型的计算流程，提高了运行效率，增强了对图像细节的捕捉和呈现能力。</td>
+  </tr>
+  <tr>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">Janus - Pro</td>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">支持更复杂、多样化的文本提示，生成图像的风格更加丰富，质量进一步提高。</td>
+    <td style="padding: 8px; text-align: center;">扩大了模型的训练数据范围，提升了对复杂语义的理解和图像生成的精准度。</td>
+  </tr>
+</table>
+</div>
 
 ### 2．**GPT-4o版本演变**
 
@@ -49,11 +68,30 @@ GPT-4o于2025年5月发布，是OpenAI首个全能多模态模型，将图像生
 
 ### 1．**图像生成能力**
 
-| 对比维度 | Deepseek Janus | GPT-4o |
-|---------|----------------|---------|
-| 生成质量 | 生成的图像细节丰富，色彩搭配协调，整体视觉效果较好。例如，当输入"一幅美丽的海边日落风景图"，能呈现出细腻的天空色彩过渡和清晰的海浪纹理。 | 图像质量高，画面精致，对光影和物体质感的表现出色。同样输入上述提示词，生成的图像在光影效果上更加逼真，能营造出更强烈的氛围感。 |
-| 指令遵循 | 能较好地理解并遵循指令，对于复杂指令也能尽力呈现。如输入"一个穿着古装的少女在樱花树下弹奏古筝，画面要有梦幻的感觉"，能准确生成符合描述的图像。 | 严格遵循指令，对指令的理解精准度高。输入相同提示词，生成的图像在人物姿态、场景元素等方面与指令高度契合。 |
-| 风格表现 | 风格多样，能生成写实、卡通、抽象等多种风格的图像。例如输入"一幅抽象风格的现代艺术画"，可生成具有独特艺术感的图像。 | 风格丰富且细腻，在不同风格的转换上自然流畅。输入相同提示词，生成的抽象画在艺术表现力上更具深度和内涵。 |
+<div style="border: 1px solid rgb(149, 162, 171); border-radius: 5px; overflow: hidden;">
+<table style="border-collapse: collapse; width: 100%;">
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <th style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">对比维度</th>
+    <th style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">Deepseek Janus</th>
+    <th style="padding: 8px; text-align: center;">GPT-4o</th>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">生成质量</td>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">生成的图像细节丰富，色彩搭配协调，整体视觉效果较好。例如，当输入"一幅美丽的海边日落风景图"，能呈现出细腻的天空色彩过渡和清晰的海浪纹理。</td>
+    <td style="padding: 8px; text-align: center;">图像质量高，画面精致，对光影和物体质感的表现出色。同样输入上述提示词，生成的图像在光影效果上更加逼真，能营造出更强烈的氛围感。</td>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">指令遵循</td>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">能较好地理解并遵循指令，对于复杂指令也能尽力呈现。如输入"一个穿着古装的少女在樱花树下弹奏古筝，画面要有梦幻的感觉"，能准确生成符合描述的图像。</td>
+    <td style="padding: 8px; text-align: center;">严格遵循指令，对指令的理解精准度高。输入相同提示词，生成的图像在人物姿态、场景元素等方面与指令高度契合。</td>
+  </tr>
+  <tr>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">风格表现</td>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">风格多样，能生成写实、卡通、抽象等多种风格的图像。例如输入"一幅抽象风格的现代艺术画"，可生成具有独特艺术感的图像。</td>
+    <td style="padding: 8px; text-align: center;">风格丰富且细腻，在不同风格的转换上自然流畅。输入相同提示词，生成的抽象画在艺术表现力上更具深度和内涵。</td>
+  </tr>
+</table>
+</div>
 
 ### 2．**图像识别能力**
 
@@ -63,7 +101,7 @@ GPT - 4o在图像识别上同样具有较高的准确性，并且在理解深度
 
 ### 3．**多模态交互能力**
 
-Deepseek Janus在多模态交互方面具有一定优势。它的上下文感知能力较强，在对话过程中能结合之前的文本和图像信息进行回应。例如，在一段关于图像创作的对话中，它能根据之前讨论的风格和元素，继续生成相关的图像或提供建议。在跨模态知识整合上，它能将文本中的知识与图像信息相结合，生成更具逻辑性的内容。
+Deepseek Janus在多模态交互方面具有一定优势。它的上下文感知能力较强，在对话过程中能结合之前的文本和图像信息进行回应。例如，在一段关于图像创作的对话中，它能根据之前讨论的风格和元素，继续生成相关的图像或提供建议。在跨模态知识整合上，它能将文本中的知识与图像信息相结合，生成更有逻辑性的内容。
 
 然而，GPT - 4o的多模态交互能力更为强大。它的上下文感知非常敏锐，能准确捕捉对话中的细微变化，并据此调整图像生成和回答内容。在跨模态知识整合方面，它能更高效地融合文本、图像和代码等多种信息，提供更全面、深入的解决方案。但Deepseek Janus的开源特性使其在定制化开发方面具有一定灵活性，可根据具体需求优化多模态交互能力。
 
@@ -81,10 +119,22 @@ GPT-4o在多语言需求和复杂推理场景中表现卓越。在多语言方�
 
 ### 1．**现存不足分析**
 
-| 模型 | 现存问题 |
-|------|----------|
-| Deepseek Janus | - 在细节精度上，部分复杂图像的细微之处表现不够精细，如毛发、纹理等<br>- 多语言支持方面，虽然对中文处理出色，但在其他语言的理解和生成上存在一定局限<br>- 生成限制上，对于一些过于抽象、模糊的提示，生成效果可能不太理想 |
-| GPT-4o | - 成本较高，无论是训练成本还是API使用价格，对于部分用户来说负担较大<br>- 在某些特定领域的图像生成上，可能缺乏针对性，不够贴合专业需求<br>- 多语言支持虽广泛，但在一些小语种的处理上可能不够精准 |
+<div style="border: 1px solid rgb(149, 162, 171); border-radius: 5px; overflow: hidden;">
+<table style="border-collapse: collapse; width: 100%;">
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <th style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">模型</th>
+    <th style="padding: 8px; text-align: center;">现存问题</th>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(149, 162, 171);">
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">Deepseek Janus</td>
+    <td style="padding: 8px; text-align: center;">- 在细节精度上，部分复杂图像的细微之处表现不够精细，如毛发、纹理等<br>- 多语言支持方面，虽然对中文处理出色，但在其他语言的理解和生成上存在一定局限<br>- 生成限制上，对于一些过于抽象、模糊的提示，生成效果可能不太理想</td>
+  </tr>
+  <tr>
+    <td style="border-right: 1px solid rgb(149, 162, 171); padding: 8px; text-align: center;">GPT-4o</td>
+    <td style="padding: 8px; text-align: center;">- 成本较高，无论是训练成本还是API使用价格，对于部分用户来说负担较大<br>- 在某些特定领域的图像生成上，可能缺乏针对性，不够贴合专业需求<br>- 多语言支持虽广泛，但在一些小语种的处理上可能不够精准</td>
+  </tr>
+</table>
+</div>
 
 ### 2．**未来发展趋势**
 
