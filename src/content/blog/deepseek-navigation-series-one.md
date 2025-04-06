@@ -60,6 +60,22 @@ tags:
   </a>
 </div>
 
+<div class="ai-card recommended" data-tags="recommend full free">
+  <a href="https://deepseek.free2gpt.com/" target="_blank" class="card-link">
+    <div class="card-image">
+      <img src="https://deepseek.free2gpt.com/apple-touch-icon.png" alt="free2gpt">
+    </div>
+    <div class="card-content">
+      <h5>Free2Gpt</h5>
+      <div class="tags">
+        <span class="tag recommend">推荐</span>
+        <span class="tag">满血</span>
+        <span class="tag">免费</span>
+      </div>
+    </div>
+  </a>
+</div>
+
 <div class="ai-card recommended" data-tags="recommend full free online">
   <a href="https://xiaoyi.huawei.com/chat" target="_blank" class="card-link">
     <div class="card-image">
