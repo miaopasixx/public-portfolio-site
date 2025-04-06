@@ -21,12 +21,14 @@
 	},
 	{
 		"id": "3",
-		"cover": "/assets/cover/cover-travel.jpg",
-		"title": "【示例】Tink 旅行生活日记",
-		"desc": "Mobile 网站",
-		"category": "ui",
-		"tag": "UI",
-		"date": "2025-01-01"
+		"cover": "/assets/blog/ai-video-tools-navigation.png",
+		"title": "AI视频工具导航",
+		"desc": "AI视频工具导航",
+		"url": "https://tool.mpsxx.top/blog/ai-video-tools-navigation",
+		"category": "ai,web,client,video,face-changing,digital-human",
+		"tag": "AI,Web,Client,Video,Face-Changing,Digital-Human",
+		"date": "2025-01-15",
+		"mark": true
 	},
 	{
 		"id": "4",
