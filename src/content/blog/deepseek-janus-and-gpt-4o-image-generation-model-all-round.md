@@ -1,6 +1,6 @@
 ---
 title: Deepseek Janus与GPT-4o图像生成模型全方位
-publishDate: 2025-06-26
+publishDate: 2025-04-01
 read: 10
 description: Deepseek Janus 与 GPT-4o 图像生成模型的全方位介绍与分析。
 tags:

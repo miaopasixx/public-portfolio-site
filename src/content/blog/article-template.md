@@ -1,7 +1,7 @@
 ---
 title: Markdown 样式示例
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-publishDate: 2025-10-20 00:00:00
+publishDate: 1900-01-01 00:00:00
 # img: /assets/stock.jpg 可配置文章封面
 # img_alt: stock
 tags:
