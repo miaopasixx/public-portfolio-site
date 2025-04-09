@@ -1,12 +1,9 @@
+# 🌟 极客资源工具组 - 个人网站
 
-<a href="/README_EN.md" style="margin-bottom:16px">ENGLISH README</a>
+### 📱 网站预览
+小太阳🔆的工具集:  <a href="https://tool.mpsxx.top/" target="_blank">tool.mpsxx.top</a>
 
-# 设计师的个人网站 Designer Portfolio Site
-
-### 网站预览
-Rico's Blog:  <a href="https://blog.ricocc.com/" target="_blank">blog.ricocc.com</a>
-
-仓库地址:   <a href="github.com/ricocc/public-portfolio-site" target="_blank"> https://github.com/ricocc/public-portfolio-site </a>
+仓库地址:   <a href="https://github.com/miaopasixx/public-portfolio-site" target="_blank">github.com/miaopasixx/public-portfolio-site</a>
 
 <img src="public/preview-01.jpg" alt="Blog Preview" width="640" height="auto" style="display:inline-block;margin:12px;">
 
@@ -112,35 +109,35 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```
 /
-├── public/
+├── public/                # 静态资源
 │   ├── images/
 │   ├── logo.svg
 │   ├── favicon.ico
 │   └── ...
 ├── src/
-│   ├── assets/
+│   ├── assets/            # 资源文件
 │   │   └── *Layout.astro*
-│   ├── components/
+│   ├── components/        # 组件
 │   │   ├── *
-│   ├── layouts/
+│   ├── layouts/           # 布局
 │   │   └── Layout.astro
-│   ├── content/
+│   ├── content/           # 内容
 │   │   └── *
-│   ├── data/
+│   ├── data/              # 数据
 │   │   ├── content.ts
 │   │   ├── project.ts
 │   │   └── home.json
-│   ├── effets/
+│   ├── effets/            # 特效
 │   │   └── *.astro
-│   ├── layouts/
+│   ├── layouts/           # 布局
 │   │   └── Layout.astro
-│   └── pages/
+│   └── pages/             # 页面
 │       ├── index.astro
 │       ├── about.astro
 │       ├── project.astro
 │       ├── blog.astro
 │       └── 404.astro
-├── package.json
+├── package.json           # 项目配置
 ```
 
 ---
@@ -161,23 +158,23 @@ Yarn Command:
 
 ---
 
-#### 步骤：
+#### 快速开始：
+# 全局安装yarn包管理工具
 - npm install -g yarn	
+
+# 安装项目依赖
 - yarn install
+
+# 启动开发服务器
 - yarn dev
 
-### 关于作者
+### 👨‍💻 关于作者
+我是小太阳🔆，极客资源工具组室长，致力于分享实用工具和技术见解。欢迎关注我的Github @miaopasixx 或加入我的 极客资源工具组 。
 
-我是Rico，网页/UI设计师，目前主要专注在网页视觉和独立开发。我平时在博客<a href="https://blog.ricocc.com/" target="_blank">Rico's Blog</a>更新内容。也可以关注我的小红书 [@Rico的设计漫想](https://www.xiaohongshu.com/user/profile/5f2b6903000000000101f51f) 和 推特 [@ricouii](https://x.com/ricouii).
-
-
-#### 项目
-- 💡 网页灵感库 <a href="https://inspoweb.com/" target="_blank">InspoWeb.com</a>
-- 🎉 UIUX 工具&资源 <a href="https://uiuxdeck.com/" target="_blank"> UIUXDECK.com</a>
-- 🎨 原创免费渐变 <a href="http://gradientshub.com/" target="_blank">GradientsHub</a>
-- ✔️ Todo List <a href="https://github.com/ricocc/uiineed-todo-list/" target="_blank">Github</a>
-
-
+#### 🛠️ 我的项目
+- 💡 极客资源工具组 加入我们
+- 🎉 个人工具集 tool.mpsxx.top
+- 🎨 Github @miaopasixx
 
 ### 💜支持作者
 
@@ -185,3 +182,14 @@ Yarn Command:
 如果觉得有所帮助的话，一点点支持就可以大大激励创作者的热情，感谢！
 
 <img src="public/ricocc/zanshangma.jpg" alt="ricocc-wechat" width="280" height="auto" style="display:inline-block;margin:12px;">
+
+### 特别感谢
+
+本项目基于 Rico 的开源项目二次开发，感谢 Rico 的无私分享。Rico 是一位网页/UI设计师，主要专注于网页视觉和独立开发。你可以在他的博客 <a href="https://blog.ricocc.com/" target="_blank">Rico's Blog</a> 了解更多。同时也欢迎关注他的小红书 [@Rico的设计漫想](https://www.xiaohongshu.com/user/profile/5f2b6903000000000101f51f) 和 推特 [@ricouii](https://x.com/ricouii)。
+
+
+#### Rico的项目
+- 💡 网页灵感库 <a href="https://inspoweb.com/" target="_blank">InspoWeb.com</a>
+- 🎉 UIUX 工具&资源 <a href="https://uiuxdeck.com/" target="_blank"> UIUXDECK.com</a>
+- 🎨 原创免费渐变 <a href="http://gradientshub.com/" target="_blank">GradientsHub</a>
+- ✔️ Todo List <a href="https://github.com/ricocc/uiineed-todo-list/" target="_blank">Github</a>
