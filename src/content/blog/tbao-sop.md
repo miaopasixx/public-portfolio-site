@@ -191,6 +191,7 @@ ROI实时监测仪表盘按天、周、月三个维度展示各推广渠道的�
                 </span>
             </p>
             <a href="https://xcno7vo82ili.feishu.cn/docx/BrNJdWlehoerWcx2AEncdPvznUg" 
+               target="_blank"
                style="display: inline-block; padding: 10px 25px; background: #FF6B6B; color: white; text-decoration: none; border-radius: 25px; font-weight: bold; transition: all 0.3s ease;"
                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(255,107,107,0.4)'"
                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
@@ -210,6 +211,7 @@ ROI实时监测仪表盘按天、周、月三个维度展示各推广渠道的�
                 </span>
             </p>
             <a href="https://www.alipan.com/s/eThZjQMZ3Z9" 
+               target="_blank"
                style="display: inline-block; padding: 10px 25px; background: #4E6EF1; color: white; text-decoration: none; border-radius: 25px; font-weight: bold; transition: all 0.3s ease;"
                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(78,110,241,0.4)'"
                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
