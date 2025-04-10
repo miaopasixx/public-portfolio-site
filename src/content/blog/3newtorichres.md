@@ -66,7 +66,7 @@ tags:
 
 资源组提供了详细的商业计划书模板，涵盖项目概述、市场分析、商业模式、财务规划等内容，能帮助创业者快速搭建创业框架。
 
-以下是 3 个新兴行业案例：一是智能家居服务，随着智能家居普及，安装、调试、维修等服务需求增加；二是环保回收，人们环保意识提高，废旧物品回收再利用市场前景广阔；三是线上教育辅导，疫情后线上学习习惯养成，针对特定学科或技能的辅导有很大市场。
+以下是 3 个新兴行业案例：一是智能家居服务，随着智能家居普及，安装、调试、维修等服务需求增加；二是环保回收，人们环保意识提高，废旧物品回收再利用市场前景广阔；三是线上教育辅导，疫情后线上学习习惯养成，针对特定学科或技能的辅导有很大的市场。
 
 ### 3．**职场财富增长秘笈**
 
@@ -171,15 +171,10 @@ tags:
     </div>
 </div>
 
+<script src="/scripts/passwordManager.js"></script>
 <script>
 function checkPassword() {
-  const password = document.getElementById('content-password').value;
-  if (password === '20250407') {
-    document.getElementById('password-section').style.display = 'none';
-    document.getElementById('hidden-content').style.display = 'block';
-  } else {
-    alert('密码错误，请重试！');
-  }
+  handlePasswordCheck('3newtorichres');
 }
 </script>
 

@@ -89,7 +89,7 @@ tags:
 
 互动率与流量推荐机制密切相关。平台算法会根据视频的互动率来判断内容的受欢迎程度，互动率越高，视频越容易获得推荐，从而获得更多的曝光。以下是一些话术模板：
 
-· 提问式：“你在给宝宝选奶粉时最看重什么？”
+· 提问式：“你在宝宝的选奶粉时最看重什么？”
 
 · 福利式：“点赞收藏，评论区留言，抽取幸运观众送育儿书籍。”
 
@@ -156,14 +156,9 @@ tags:
   </div>
 </div>
 
+<script src="/scripts/passwordManager.js"></script>
 <script>
 function checkPassword() {
-  const password = document.getElementById('content-password').value;
-  if (password === '20250408') {
-    document.getElementById('password-section').style.display = 'none';
-    document.getElementById('hidden-content').style.display = 'block';
-  } else {
-    alert('密码错误，请重试！');
-  }
+  handlePasswordCheck('BabyTrafficKey');
 }
 </script>
