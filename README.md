@@ -1,4 +1,5 @@
 # 🌟 极客资源工具组 - 个人网站
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7e460c3-d4bb-4a7b-a794-6285b6c9c227/deploy-status)](https://app.netlify.com/sites/mpsxx/deploys)
 
 ### 📱 网站预览
 小太阳🔆的工具集:  <a href="https://tool.mpsxx.top/" target="_blank">tool.mpsxx.top</a>
