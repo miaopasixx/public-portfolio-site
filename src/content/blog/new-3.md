@@ -1,7 +1,7 @@
 ---
 title: OpenAI的"不对称博弈"：慈善面具下的逐利之心？
 description: '分析OpenAI非营利委员会顾问任命背后的战略意图与商业考量'
-publishDate: 2025-04-20 16:30:00
+publishDate: 2025-04-16 13:27:00
 tags:
   - news
   - OpenAI
