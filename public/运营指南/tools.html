@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天室室长运营指南 - 完整攻略</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e40af;
+            --accent-color: #60a5fa;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --card-bg: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+        
+        .dark {
+            --primary-color: #60a5fa;
+            --secondary-color: #93c5fd;
+            --accent-color: #3b82f6;
+            --text-color: #f3f4f6;
+            --bg-color: #111827;
+            --card-bg: #1f2937;
+            --border-color: #374151;
+        }
+        
+        body {
+            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent-color);
+        }
+        
+        .btn {
+            transition: transform 0.1s ease, background-color 0.2s ease;
+        }
+        
+        .btn:hover {
+            transform: scale(1.02);
+        }
+        
+        .command-block {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-left: 3px solid var(--primary-color);
+            padding: 0.75rem 1rem;
+            margin: 1rem 0;
+            border-radius: 0 0.25rem 0.25rem 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .dark .command-block {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 3rem;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .img-container img {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: auto;
+        }
+        
+        .img-container:hover img {
+            transform: scale(1.02);
+        }
+        
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 9999px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+        
+        .tool-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in, .card, .btn, .img-container img {
+                animation: none;
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="theme-toggle fixed top-4 right-4 z-50">
+        <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none">
+            <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+            <i class="fas fa-moon text-blue-300 hidden dark:block"></i>
+        </button>
+    </div>
+
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4 fade-in">聊天室室长运营指南</h1>
+            <p class="text-xl opacity-90 max-w-3xl fade-in">全面掌握聊天室管理技巧，提升用户活跃度，打造高质量社群</p>
+        </div>
+    </header>
+
+    <nav class="sticky top-0 bg-white dark:bg-gray-800 shadow-md z-40 py-3 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between">
+            <span class="font-semibold text-lg text-blue-600 dark:text-blue-400">室长指南</span>
+            <div class="flex space-x-4 overflow-x-auto pb-1 hide-scrollbar">
+                <a href="#basic-management" class="whitespace-nowrap px-3 py-1 rounded-full text-sm hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors">基础管理</a>
+                <a href="#commands" class="whitespace-nowrap px-3 py-1 rounded-full text-sm hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors">管理命令</a>
+                <a href="#activity-tools" class="whitespace-nowrap px-3 py-1 rounded-full text-sm hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors">活动工具</a>
+                <a href="#engagement" class="whitespace-nowrap px-3 py-1 rounded-full text-sm hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors">活跃攻略</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section id="basic-management" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-8 section-title">基础管理功能</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-cog text-blue-500 mr-2"></i>
+                        管理设置入口
+                    </h3>
+                    <p class="mb-4">室长获得管理权限后可以点开房间列表的设置键，进入管理界面。</p>
+                    <div class="img-container">
+                        <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN01B7t5Ey1SeAVrpHsO5_!!2219106532271-2-taojianghu_pic_upload.png" alt="管理设置入口" class="rounded-lg" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-chart-line text-blue-500 mr-2"></i>
+                        数据分析
+                    </h3>
+                    <p class="mb-4">室长可以通过数据了解到自己房间的每日访问数量、消息数量以及新用户数量。</p>
+                    <div class="img-container">
+                        <img src="https://img.alicdn.com/imgextra/i4/2219106532271/O1CN010CO7xF1SeAVrIGbXy_!!2219106532271-2-taojianghu_pic_upload.png" alt="数据分析" class="rounded-lg" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-bell text-blue-500 mr-2"></i>
+                        全员通知
+                    </h3>
+                    <p class="mb-4">发布通知可使用聊天室全员POP通知，确保重要信息被所有成员看到。</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="img-container">
+                            <img src="https://img.alicdn.com/imgextra/i3/2219106532271/O1CN01i4j7TR1SeAVq8zjLx_!!2219106532271-2-taojianghu_pic_upload.png" alt="通知设置" class="rounded-lg" loading="lazy">
+                        </div>
+                        <div class="img-container">
+                            <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN01SlOJoX1SeAVojbIXe_!!2219106532271-2-taojianghu_pic_upload.png" alt="通知效果" class="rounded-lg" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-window-restore text-blue-500 mr-2"></i>
+                        小窗设置
+                    </h3>
+                    <p class="mb-4">输入 /window 或直接点击聊天室右上加号打开小窗，双击开启编辑。</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="img-container">
+                            <img src="https://img.alicdn.com/imgextra/i4/2219106532271/O1CN01S8FTGu1SeAVrIXvUw_!!2219106532271-2-taojianghu_pic_upload.png" alt="小窗设置" class="rounded-lg" loading="lazy">
+                        </div>
+                        <div class="img-container">
+                            <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN01i7JLJq1SeAVrpV2Ih_!!2219106532271-2-taojianghu_pic_upload.png" alt="小窗效果" class="rounded-lg" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="commands" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-8 section-title">管理员命令大全</h2>
+            
+            <p class="mb-6">对话框输入 / 可打开管理员快捷键设置</p>
+            
+            <div class="img-container mb-8 max-w-lg mx-auto">
+                <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN01sCxc071SeAVjs5WNc_!!2219106532271-2-taojianghu_pic_upload.png" alt="管理员快捷键" class="rounded-lg" loading="lazy">
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card p-5 tool-card">
+                    <h3 class="font-semibold text-lg mb-2">话题设置</h3>
+                    <div class="command-block">/settopic 热点话题 1</div>
+                    <p class="text-sm opacity-75">设置热点话题，提高讨论活跃度</p>
+                </div>
+                
+                <div class="card p-5 tool-card">
+                    <h3 class="font-semibold text-lg mb-2">话题关闭</h3>
+                    <div class="command-block">/settopic 热点话题 -1</div>
+                    <p class="text-sm opacity-75">关闭当前热点话题</p>
+                </div>
+                
+                <div class="card p-5 tool-card">
+                    <h3 class="font-semibold text-lg mb-2">倒计时设置</h3>
+                    <div class="command-block">/broadcast 倒计时 {秒数}</div>
+                    <p class="text-sm opacity-75">设置倒计时，用于活动开始前提醒</p>
+                </div>
+                
+                <div class="card p-5 tool-card">
+                    <h3 class="font-semibold text-lg mb-2">发送元宝</h3>
+                    <div class="command-block">/yuanbaosend 发送人员 元宝数量</div>
+                    <p class="text-sm opacity-75">向指定用户发送元宝奖励</p>
+                </div>
+                
+                <div class="card p-5 tool-card">
+                    <h3 class="font-semibold text-lg mb-2">聊天室公告</h3>
+                    <div class="command-block">/broadcast 公告内容</div>
+                    <p class="text-sm opacity-75">发布置顶公告，介绍聊天室内容</p>
+                </div>
+                
+                <div class="card p-5 tool-card">
+                    <h3 class="font-semibold text-lg mb-2">小窗设置</h3>
+                    <div class="command-block">/window</div>
+                    <p class="text-sm opacity-75">打开小窗编辑，放置公告放不下的内容</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
+                <h4 class="font-semibold flex items-center mb-2">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                    公告设置小贴士
+                </h4>
+                <ul class="list-disc pl-5 space-y-1 text-sm">
+                    <li>公告最好精简到一排字</li>
+                    <li>公告最好加帖子链接【公告放不下的内容】</li>
+                </ul>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <div class="img-container">
+                        <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN01BbaRTS1SeAVoCD0B3_!!2219106532271-2-taojianghu_pic_upload.png" alt="公告示例1" class="rounded-lg" loading="lazy">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN017fJKIr1SeAVqXJe3u_!!2219106532271-2-taojianghu_pic_upload.png" alt="公告示例2" class="rounded-lg" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activity-tools" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-8 section-title">互动活动工具</h2>
+            
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-lg mb-8">
+                <h3 class="text-xl font-semibold mb-4">可设置的活动类型</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-white dark:bg-gray-800 p-3 rounded shadow-sm">
+                        <span class="step-number">1</span>
+                        <span>投票选项【促活、内容制作】</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-3 rounded shadow-sm">
+                        <span class="step-number">2</span>
+                        <span>答题【日常活动】</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-3 rounded shadow-sm">
+                        <span class="step-number">3</span>
+                        <span>谁是幸运儿【偶尔活动】</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-3 rounded shadow-sm">
+                        <span class="step-number">4</span>
+                        <span>聊天室公告【必备】</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-3 rounded shadow-sm">
+                        <span class="step-number">5</span>
+                        <span>小窗消息【必备】</span>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-3 rounded shadow-sm">
+                        <span class="step-number">6</span>
+                        <span>热点话题设置【必备】</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- 投票工具 -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">一、投票工具</h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">输入格式:</h4>
+                        <div class="command-block">/setpoll 题目，选项1，选项2</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">示例:</h4>
+                        <div class="command-block">/setpoll 如何看待全球股市?，A看好，B看衰</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">效果展示:</h4>
+                        <div class="img-container max-w-md mx-auto">
+                            <img src="https://img.alicdn.com/imgextra/i3/2219106532271/O1CN01AQ71G31SeAVqWTLdZ_!!2219106532271-2-taojianghu_pic_upload.png" alt="投票工具效果" class="rounded-lg" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-3 rounded-lg">
+                        <h4 class="font-semibold flex items-center">
+                            <i class="fas fa-times-circle text-red-500 mr-2"></i>
+                            投票关闭命令:
+                        </h4>
+                        <div class="command-block">/poll</div>
+                    </div>
+                </div>
+                
+                <!-- 答题工具 -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">二、答题工具</h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">输入格式:</h4>
+                        <div class="command-block">/setquiz 测试问题{答题秒数} ,选项1，选项2*，选项3</div>
+                        <p class="text-sm mt-1 opacity-75">(带*为正确选项）</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">示例:</h4>
+                        <div class="command-block">/setquiz 红色加蓝色等于什么颜色{30}，黄色，红色，紫色*</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">效果展示:</h4>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="img-container">
+                                <img src="https://img.alicdn.com/imgextra/i3/2219106532271/O1CN012PMjtS1SeAVpkg1ck_!!2219106532271-2-taojianghu_pic_upload.png" alt="答题工具效果1" class="rounded-lg" loading="lazy">
+                            </div>
+                            <div class="img-container">
+                                <img src="https://img.alicdn.com/imgextra/i1/2219106532271/O1CN01gVYhbh1SeAVqdgmNc_!!2219106532271-2-taojianghu_pic_upload.png" alt="答题工具效果2" class="rounded-lg" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg">
+                        <h4 class="font-semibold mb-2">注意事项:</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>符号、格式、秒数要正确</li>
+                            <li>正确答案在题目内标记"*"</li>
+                            <li>答题活动一般准备10道</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-3 rounded-lg">
+                        <h4 class="font-semibold flex items-center">
+                            <i class="fas fa-times-circle text-red-500 mr-2"></i>
+                            答题关闭命令:
+                        </h4>
+                        <div class="command-block">/quiz</div>
+                    </div>
+                </div>
+                
+                <!-- 押宝答题工具 -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">三、押宝答题工具</h3>
+                    
+                    <div class="bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg mb-4">
+                        <p>押宝答题参与者需要上交2元宝，答对者瓜分元宝奖池。</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">输入格式:</h4>
+                        <div class="command-block">/setybquiz 测试问题{答题秒数} ,选项1，选项2*，选项3</div>
+                        <p class="text-sm mt-1 opacity-75">(带*为正确选项）</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">示例:</h4>
+                        <div class="command-block">/setybquiz 红色加蓝色等于什么颜色{30}，黄色，红色，紫色*</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">效果展示:</h4>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="img-container">
+                                <img src="https://img.alicdn.com/imgextra/i4/2219106532271/O1CN01Z1XqHL1SeAVrLadwY_!!2219106532271-2-taojianghu_pic_upload.png" alt="押宝答题效果1" class="rounded-lg" loading="lazy">
+                            </div>
+                            <div class="img-container">
+                                <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN014uISzU1SeAVqdq6jp_!!2219106532271-2-taojianghu_pic_upload.png" alt="押宝答题效果2" class="rounded-lg" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <div class="img-container">
+                                <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN012IQTLD1SeAVrLZN1x_!!2219106532271-2-taojianghu_pic_upload.png" alt="押宝答题效果3" class="rounded-lg" loading="lazy">
+                            </div>
+                            <div class="img-container">
+                                <img src="https://img.alicdn.com/imgextra/i3/2219106532271/O1CN01TZANZX1SeAVokfQON_!!2219106532271-2-taojianghu_pic_upload.png" alt="押宝答题效果4" class="rounded-lg" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-3 rounded-lg">
+                        <h4 class="font-semibold flex items-center">
+                            <i class="fas fa-times-circle text-red-500 mr-2"></i>
+                            押宝答题关闭命令:
+                        </h4>
+                        <div class="command-block">/quiz</div>
+                    </div>
+                </div>
+                
+                <!-- 谁是幸运儿 -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">四、谁是幸运儿</h3>
+                    
+                    <div class="bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg mb-4">
+                        <p>随机颜色押注，默认两元宝，获胜者瓜分全部元宝</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">输入格式:</h4>
+                        <div class="command-block">/whoislucky 30</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">效果展示:</h4>
+                        <div class="img-container max-w-md mx-auto">
+                            <img src="https://img.alicdn.com/imgextra/i1/2219106532271/O1CN01LZn3cD1SeAVjs5K27_!!2219106532271-2-taojianghu_pic_upload.png" alt="谁是幸运儿效果" class="rounded-lg" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 bg-yellow-50 dark
+                    <div class="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg">
+                        <h4 class="font-semibold mb-2">注意事项:</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>30代表默认30秒，可自行设置</li>
+                            <li>不需要填写内容，直接发送自动默认七彩</li>
+                            <li>用答题开关关闭该设置</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="engagement" class="mb-16 fade-in">
+            <h2 class="text-3xl font-bold mb-8 section-title">聊天室活跃攻略</h2>
+            
+            <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg mb-8">
+                <p class="text-lg mb-4">新群创立室长可以拉一些朋友和聊天室活跃成员一起在群里闲聊，尽量让群不要处于冷场状态。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <div class="flex items-start mb-4">
+                        <span class="step-number">1</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">制定公告内容和固定问答</h3>
+                            <p class="opacity-80">室长可根据聊天室主题制定公告内容和一些固定问答，保持活跃性。</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="https://img.alicdn.com/imgextra/i1/2219106532271/O1CN01g4lJou1SeAVqj9le7_!!2219106532271-2-taojianghu_pic_upload.png" alt="制定公告内容" class="rounded-lg" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <div class="flex items-start mb-4">
+                        <span class="step-number">2</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">参与创作者计划</h3>
+                            <p class="opacity-80">兴趣类聊天室室长可参与创作者计划，原创相关内容文章并发到群里，邀请用户点评互赞。</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="https://img.alicdn.com/imgextra/i2/2219106532271/O1CN01TYNCn81SeAVpzJUIS_!!2219106532271-2-taojianghu_pic_upload.png" alt="参与创作者计划" class="rounded-lg" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <div class="flex items-start mb-4">
+                        <span class="step-number">3</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">设计互动小游戏</h3>
+                            <p class="opacity-80">日常聊天室可以根据聊天室玩法设计答题、猜词，辩论赛，投票，你猜我画等等小游戏。设置一些元宝和现金奖金。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <div class="flex items-start mb-4">
+                        <span class="step-number">4</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">新人互动技巧</h3>
+                            <p class="opacity-80">有新人进来点击打招呼，如果有人发言要尽快回应。</p>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="https://img.alicdn.com/imgextra/i3/2219106532271/O1CN01wBWYzJ1SeAVol33Q6_!!2219106532271-2-taojianghu_pic_upload.png" alt="新人互动" class="rounded-lg" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 card p-6">
+                <h3 class="text-xl font-bold mb-6">聊天室互动技巧</h3>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 dark:bg-blue-900/50 rounded-full w-8 h-8 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold mr-3 flex-shrink-0">1</div>
+                        <div>
+                            <p class="font-medium">用是否问题，而不是开放问题，并艾特到具体的人</p>
+                            <p class="text-sm opacity-75 mt-1">例：你听说过xxx吗？/你知道这个新闻吗？</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 dark:bg-blue-900/50 rounded-full w-8 h-8 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold mr-3 flex-shrink-0">2</div>
+                        <div>
+                            <p class="font-medium">顺着看之前的发言有没有能接话的，并艾特到具体的人</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 dark:bg-blue-900/50 rounded-full w-8 h-8 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold mr-3 flex-shrink-0">3</div>
+                        <div>
+                            <p class="font-medium">遇到积极发言的，提问的/建议的，及时鼓励和追问</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 dark:bg-blue-900/50 rounded-full w-8 h-8 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold mr-3 flex-shrink-0">4</div>
+                        <div>
+                            <p class="font-medium">使用鼓励性语言</p>
+                            <p class="text-sm opacity-75 mt-1">"你说的很好，想问问你为什么这么讲，可以展开说说么？大家应该都很想听"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 dark:bg-blue-900/50 rounded-full w-8 h-8 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold mr-3 flex-shrink-0">5</div>
+                        <div>
+                            <p class="font-medium">发动投票大法/接龙大法</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 dark:bg-blue-900/50 rounded-full w-8 h-8 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold mr-3 flex-shrink-0">6</div>
+                        <div>
+                            <p class="font-medium">自问自答，分享内容</p>
+                            <p class="text-sm opacity-75 mt-1">找一篇淘江湖或者网络的新闻图片，发进去，说一下自己的观点</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 dark:bg-gray-800 py-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">聊天室室长运营指南</h3>
+                    <p class="opacity-75">全面掌握聊天室管理技巧，提升用户活跃度</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/yourusername" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" class="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm opacity-75">
+                <p>© 2023 聊天室室长运营指南. 版权所有.</p>
+                <p class="mt-2">作者: 淘江湖运营团队</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 主题切换功能
+        const themeToggle = document.getElementById('theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // 初始化主题
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDarkScheme.matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+        
+        // 切换主题
+        themeToggle.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 添加淡入效果
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

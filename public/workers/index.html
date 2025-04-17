@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+  <meta charset="UTF-8">
+  <title>打工人模拟器: Codepen模拟游戏</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<img class='m' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pixelTest.png'>
+<div class='floor'></div>
+<div class='overlay'></div>
+<div class='options'>
+  <div class='options_sf'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/sfIcon.png'>
+  </div>
+  <div class='options_bg'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/bgIcon.png'>
+  </div>
+</div>
+<div class='name_modal'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <div class='intro_modal__header'>
+    <p>欢迎</p>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/featuredHeader.png'>
+  </div>
+  <h3>输入你的名字，开发者</h3>
+  <hr>
+  <input placeholder='你的名字' type='text'>
+  <div class='next'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    下一步
+  </div>
+</div>
+<div class='intro_modal'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <div class='intro_modal__header'>
+    <p>欢迎</p>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/featuredHeader.png'>
+  </div>
+  <h3>欢迎来到打工人模拟器</h3>
+  <hr>
+  <p class='text'>你的目标是在1年内获得尽可能多的粉丝！</p>
+  <p class='text'>通过随机按键来创建作品。作品将根据你的技能水平获得HTML、CSS、JS和设计方面的属性。使用你的粉丝解锁研究项目来提升你的技能！</p>
+  <p class='text'>如果作品足够优秀，它将被推荐，这会增加你的浏览量。</p>
+  <div class='go'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    开始游戏
+  </div>
+</div>
+<div class='endGame'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <div class='endGame__header'>
+    <p>完成</p>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/featuredHeader.png'>
+  </div>
+  <h3>恭喜！你在Codepen上完成了1年的打工！</h3>
+  <hr>
+  <h2>你成功获得了</h2>
+  <h1>100000</h1>
+  <p>粉丝</p>
+  <p>
+    你发布了
+    <span class='pencount'>1</span>
+    个作品
+  </p>
+  <p>
+    你浏览量最高的作品是
+    <span class='mostName'>x</span>
+    它有
+    <span class='mostViews'>x</span>
+    次浏览！
+  </p>
+  <a href='http://www.codepen.io/jcoulterdesign' target='_blank'>
+    <div class='restart'>
+      <div class='pixelsTop'></div>
+      <div class='pixelsBottom'></div>
+      查看更多酷炫内容
+    </div>
+  </a>
+  <div class='share'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    分享到推特
+  </div>
+</div>
+<div class='researchProgress'>
+  <h2>研究中...</h2>
+  <div class='bar'>
+    <div class='bar_inner'></div>
+  </div>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+</div>
+<div class='featured_modal'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <div class='featured_modal__header'>
+    <p>精选</p>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/featuredHeader.png'>
+  </div>
+  <h3>你的作品被精选了！</h3>
+  <hr>
+  <div class='featured_modal__image'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cPreview.png'>
+  </div>
+  <div class='featured_modal__text'>
+    <p>
+      你的作品 '
+      <span class='name'>示例作品</span>
+      '
+    </p>
+    <p>已被</p>
+    <p class='picker'></p>
+    <p>精选，这将帮助提升你的浏览量！</p>
+  </div>
+  <div class='awesome'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    太棒了
+  </div>
+</div>
+<div class='research_modal'>
+  <div class='research_modal__header'>
+    <p>研究</p>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/researchHeader.png'>
+  </div>
+  <h3 class='hide'>提升你的技能</h3>
+  <hr class='hide'>
+  <div class='close hide'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    x
+  </div>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <div class='research_modal__list hide'></div>
+</div>
+<div class='complete_modal'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <div class='complete_modal__header'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/penCompleteHeader.png'>
+    <p>作品完成</p>
+  </div>
+  <div class='hide'>
+    <img>
+    <h2>你完成了一个作品！</h2>
+    <hr>
+    <h3>让我们看看你的表现</h3>
+  </div>
+  <div class='complete_modal__stats hide'>
+    <div class='html'>
+      <h4>html</h4>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gHtml.png'>
+      <span>
+        <div class='swatch html'></div>
+        <span>103</span>
+      </span>
+    </div>
+    <div class='css'>
+      <h4>css</h4>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gCSS.png'>
+      <span>
+        <div class='swatch css'></div>
+        <span>103</span>
+      </span>
+    </div>
+    <div class='js'>
+      <h4>js</h4>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gJS.png'>
+      <span>
+        <div class='swatch js'></div>
+        <span>103</span>
+      </span>
+    </div>
+    <div class='design'>
+      <h4>设计</h4>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gDesign.png'>
+      <span>
+        <div class='swatch design'></div>
+        <span>103</span>
+      </span>
+    </div>
+  </div>
+  <div class='scrap hide'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    废弃作品
+    <img class='icon' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/scrapCross.png'>
+  </div>
+  <div class='release hide'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    发布作品
+    <img class='icon' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/releaseArrow.png'>
+  </div>
+</div>
+<div class='pen'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <h2>进度:</h2>
+  <div class='date'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gCalendar.png'>
+    <span></span>
+  </div>
+  <div class='followers'>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/followersIcon.png'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    粉丝数:
+    <span>0</span>
+  </div>
+  <div class='pen_bar'>
+    <div class='pen_bar_progress'></div>
+  </div>
+  <div class='pen_html'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    <div class='swatch'></div>
+    <span>HTML</span>
+    <div class='sep'></div>
+    <span class='val'>0</span>
+  </div>
+  <div class='pen_css'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    <div class='swatch'></div>
+    <span>CSS</span>
+    <div class='sep'></div>
+    <span class='val'>0</span>
+  </div>
+  <div class='pen_js'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    <div class='swatch'></div>
+    <span>JS</span>
+    <div class='sep'></div>
+    <span class='val'>0</span>
+  </div>
+  <div class='pen_design'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    <div class='swatch'></div>
+    <span>设计</span>
+    <div class='sep'></div>
+    <span class='val'>0</span>
+  </div>
+</div>
+<div class='releasedHeader'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <img class='icon' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/codepenIcon.png'>
+  已发布作品
+  <img class='arrow' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/downArrow.png'>
+</div>
+<div class='releasedEmpty'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <h2>你还没有发布任何作品</h2>
+</div>
+<div class='released'></div>
+<div class='username'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/userIcon.png'>
+  <h2>开发者</h2>
+</div>
+<div class='mystats'>
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/skilsIcon.png'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <h2>技能</h2>
+  <div class='mystats_html'>
+    <div class='swatch'></div>
+    HTML:
+    <span>等级</span>
+    <span class='val'>0</span>
+  </div>
+  <div class='mystats_css'>
+    <div class='swatch'></div>
+    CSS:
+    <span>等级</span>
+    <span class='val'>0</span>
+  </div>
+  <div class='mystats_js'>
+    <div class='swatch'></div>
+    JAVASCRIPT:
+    <span>等级</span>
+    <span class='val'>0</span>
+  </div>
+  <div class='mystats_design'>
+    <div class='swatch'></div>
+    设计:
+    <span>等级</span>
+    <span class='val'>0</span>
+  </div>
+</div>
+<div class='research'></div>
+<div class='researchButton'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <div class='researchButton_counter'>
+    <span>0</span>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+  </div>
+  研究
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/buttonArrow.png'>
+</div>
+<div class='achievementsButton'>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  成就
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/buttonArrow.png'>
+</div>
+<a href='http://www.codepen.io/jcoulterdesign' target='_blank'>
+  <div class='followButton'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+    在codepen上关注我
+  </div>
+</a>
+<div class='startMashing'>
+  <div class='auto off'>
+    自动
+    <img class='cross' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/autoCross.png'>
+    <img class='tick' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/autoTick.png'>
+    <div class='pixelsTop'></div>
+    <div class='pixelsBottom'></div>
+  </div>
+  <div class='pixelsTop'></div>
+  <div class='pixelsBottom'></div>
+  <h2>
+    <span>开始按键</span>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gKey.png'>
+  </h2>
+</div>
+<canvas class='grain'></canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

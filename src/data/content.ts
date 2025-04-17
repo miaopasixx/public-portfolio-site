@@ -151,6 +151,7 @@ export interface FilterItem {
 	dataGroup: string
 }
 export const filterItems: FilterItem[] = [
+	{ content: "游戏", dataGroup: "game" },
 	{ content: "网页", dataGroup: "web" },
 	{ content: "AI", dataGroup: "ai" },
 	{ content: "DeepSeek", dataGroup: "deepseek" },
@@ -163,6 +164,7 @@ export const filterItems: FilterItem[] = [
 	{ content: "Api", dataGroup: "api" },
 	{ content: "Github", dataGroup: "github" },
 	{ content: "其他", dataGroup: "other" }
+	
 ];
 
 
