@@ -3,12 +3,15 @@
 
 	{
 		"id": "1",
-		"cover": "/assets/cover/pexels-tink-s-838159870-19489123.jpg",
+		"cover": "assets/cover/darkroom/darkroom.png",
 		"title": "游戏合集",
-		"desc": "包含足球、赛车、僵尸射击等游戏",
+		"desc": "小黑屋游戏",
+		"url": "http://roomgame.mpsxx.top/?lang=zh_cn",
+		"detail": "/detail/darkroom",
 		"category": "game",
 		"tag": "游戏",
-		"date": "2025-01-01"
+		"date": "2025-05-19",
+		"mark": true
 	},
 	{
 		"id": "2",

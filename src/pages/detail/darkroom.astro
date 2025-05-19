@@ -1,0 +1,338 @@
+---
+import { Image } from "astro:assets";
+import DetailHeader from "../../components/DetailHeader.astro";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import CallToAction from "../../components/CallToAction.astro";
+
+// 直接导入单个图片
+const images = await Astro.glob('../../assets/projects/cover/darkroom/*.{jpg,png,webp}');
+
+---
+<DetailPostLayout
+	title="小黑屋 - 文字冒险游戏 | 606 灵感设计 | Rico "
+	description = '一款纯文字的冒险游戏，通过壮大村庄、收集材料、制作物品，开启精彩的冒险之旅！'
+	keywords = '小黑屋,文字冒险,生存游戏,村庄建设,收集资源,冒险游戏,网页游戏,606设计,Darkroom'
+>
+	<div class="post">
+		<main class="post-wrapper">
+			<DetailHeader
+			tag="GAME"
+			description="在黑暗中建设、收集、冒险，用智慧开创生存之路">
+					<h1 class="font-type">
+						小黑屋 - 文字冒险游戏
+					</h1>
+			</DetailHeader>
+
+			<section>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+							<h3 class="post-title">游戏简介</h3>
+							<p class="post-desc">
+								《小黑屋》是一款纯文字的冒险游戏，玩家需要通过壮大自己的村庄，收集各种材料，制作冒险所需的物品，然后开始精彩的冒险之旅。游戏融合了资源管理、村庄建设和冒险探索等多种玩法，为玩家提供丰富的游戏体验。
+							</p>
+						</div>
+						<div class="col-1a">
+							<p>
+								<div class="btn">
+									<CallToAction href="http://roomgame.mpsxx.top/?lang=zh_cn" target="_blank">
+										开始游戏
+									</CallToAction>
+									<button id="skills-toggle" class="cta-button">
+										游戏技能
+									</button>
+								</div>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="gsap-picture">
+					  <Image src={img.default} alt={`小黑屋游戏截图 ${index + 1}`} loading="lazy" decoding="async" />
+					</picture>
+				))}
+			</section>
+
+			<section id="game-skills" class="section-collapsible">
+				<div class="content">
+					<h3 class="post-title text-center">游戏技能系统</h3>
+					<div class="skills-grid">
+						<div class="skill-card">
+							<h4>潜行术</h4>
+							<p class="effect">效果：遇敌率减半</p>
+							<p class="obtain">获取方法：村子里抓到小偷，选择释放</p>
+						</div>
+						<div class="skill-card">
+							<h4>千里眼</h4>
+							<p class="effect">效果：视野倍增</p>
+							<p class="obtain">获取方法：遇侦察兵，选学习（需要毛皮1000、鳞片50、牙齿20）</p>
+						</div>
+						<div class="skill-card">
+							<h4>九阳神功</h4>
+							<p class="effect">效果：吃腌肉回血倍增</p>
+							<p class="obtain">获取方法：进沼泽，给护身符</p>
+						</div>
+						<div class="skill-card">
+							<h4>拳击手</h4>
+							<p class="effect">效果：徒手伤害翻倍，可与武斗家和徒手宗师叠加</p>
+							<p class="obtain">获取方法：空手攻击50次</p>
+						</div>
+						<div class="skill-card">
+							<h4>武斗家</h4>
+							<p class="effect">效果：徒手伤害翻倍，可与拳击手和徒手宗师叠加</p>
+							<p class="obtain">获取方法：空手攻击150次</p>
+						</div>
+						<div class="skill-card">
+							<h4>徒手宗师</h4>
+							<p class="effect">效果：徒手攻速翻倍，徒手伤害增加，可与拳击手和武斗家叠加，最高伤害12点一拳</p>
+							<p class="obtain">获取方法：空手攻击300次</p>
+						</div>
+						<div class="skill-card">
+							<h4>夺命连环剑</h4>
+							<p class="effect">效果：近战武器伤害提升</p>
+							<p class="obtain">获取方法：木屋挂机遇神秘老人学习（需要100腌肉、100毛皮、1火炬，选力量大师，可重复遇见）</p>
+						</div>
+						<div class="skill-card">
+							<h4>凌波微步</h4>
+							<p class="effect">效果：敌命中率降20%</p>
+							<p class="obtain">获取方法：木屋挂机遇神秘老人学习（需要100腌肉、100毛皮、1火炬，选逃脱术，可重复遇见）</p>
+						</div>
+						<div class="skill-card">
+							<h4>小李飞刀</h4>
+							<p class="effect">效果：命中率增加</p>
+							<p class="obtain">获取方法：木屋挂机遇神秘老人学习（需要100腌肉、100毛皮、1火炬，选精准术，可重复遇见）</p>
+						</div>
+						<div class="skill-card">
+							<h4>饥饿忍耐</h4>
+							<p class="effect">效果：腌肉支持路程加倍（原2步消耗1腌肉，变为4步一轮）</p>
+							<p class="obtain">获取方法：饿死10次</p>
+						</div>
+						<div class="skill-card">
+							<h4>饥渴忍耐</h4>
+							<p class="effect">效果：水支持路程加倍（原1步喝1口水，变为2步一轮）</p>
+							<p class="obtain">获取方法：渴死10次</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="game-details" class="section-collapsible">
+				<div class="content">
+					<h3 class="post-title text-center">游戏细节与提示</h3>
+					<div class="details-container">
+						<ul class="details-list">
+							<li>死亡时失去持有道具（即出发前需确认数量的道具）</li>
+							<li>死亡前的空手攻击次数计入总数</li>
+							<li>不能同时渴死与饿死，以左侧先进行说明的那个状态作为死法</li>
+							<li>在同一次旅程，第一次消耗完水或腌肉时，可支撑的步数比再次消耗完时的步数多一轮</li>
+							<li>贸易栈作用是通过毛皮，来获取铁、煤、钢的途径。经过计算，毛皮一般是剩余的，多余的就可以通过贸易栈来间接购买无法制造的特殊武器和资源</li>
+							<li>毛皮和木头要囤积，有人请求帮助时给多些，赚的机会比亏的大</li>
+							<li>上火星成功后就只能重玩了，因为你已经通关了（然后就可以看总分了，总感觉被作者敷衍了）</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="strategy section-collapsible">
+				<div class="content">
+					<h3 class="post-title text-center">游戏攻略</h3>
+					<div class="strategy-grid">
+						<div class="strategy-card">
+							<h4>前期发展</h4>
+							<p>初期应该专注于村庄建设和基础资源收集。建议优先建造木屋和工作台，增加村民数量，提高资源产出效率。</p>
+						</div>
+						<div class="strategy-card">
+							<h4>资源管理</h4>
+							<p>合理分配木材、毛皮等资源，优先制作必要的生存工具和武器。记得囤积毛皮和木头，它们在后期交易中非常有价值。</p>
+						</div>
+						<div class="strategy-card">
+							<h4>技能获取</h4>
+							<p>尽早获取潜行术和千里眼等基础技能，它们能大幅提高冒险效率。徒手战斗技能可以通过反复练习获得，是中后期的重要战力来源。</p>
+						</div>
+						<div class="strategy-card">
+							<h4>冒险准备</h4>
+							<p>出发前确保携带足够的腌肉和水，计算好路程和消耗。携带火炬可以增加夜间视野，提高生存几率。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script>
+		// 页面加载完成后执行
+		document.addEventListener('DOMContentLoaded', function() {
+			// 初始状态：所有可折叠部分都隐藏
+			const collapsibleSections = document.querySelectorAll('.section-collapsible');
+			collapsibleSections.forEach(section => {
+				section.classList.add('collapsed');
+			});
+
+			// 技能按钮点击事件
+			const skillsToggle = document.getElementById('skills-toggle');
+			const skillsSection = document.getElementById('game-skills');
+			
+			if(skillsToggle && skillsSection) {
+				skillsToggle.addEventListener('click', function() {
+					// 切换技能部分的显示/隐藏状态
+					skillsSection.classList.toggle('collapsed');
+					
+					// 如果展开了，滚动到该部分
+					if(!skillsSection.classList.contains('collapsed')) {
+						skillsSection.scrollIntoView({ behavior: 'smooth' });
+					}
+				});
+			}
+
+			// 为所有部分标题添加点击事件，使其可折叠
+			const sectionTitles = document.querySelectorAll('.section-collapsible .post-title');
+			sectionTitles.forEach(title => {
+				title.addEventListener('click', function() {
+					const section = this.closest('.section-collapsible');
+					section.classList.toggle('collapsed');
+				});
+				
+				// 添加指示器，表明可点击
+				title.classList.add('clickable');
+			});
+		});
+	</script>
+</DetailPostLayout>
+
+<style>
+img{
+	border:1px solid #ececec;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.btn{
+	display: flex;
+	gap: 16px;
+	margin-bottom: 0; /* 减少按钮下方的边距 */
+}
+/* 减少按钮与图片之间的间距 */
+.preview {
+	margin-top: 10px; /* 原来没有明确设置，现在设置较小的值 */
+}
+.text-center {
+	text-align: center;
+	margin-bottom: 24px;
+}
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	margin-bottom: 40px;
+}
+.skill-card {
+	background-color: #f8f9fa;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	border: 1px solid #e9ecef;
+}
+.skill-card h4 {
+	margin-top: 0;
+	margin-bottom: 12px;
+	color: #212529;
+	font-size: 1.2rem;
+}
+.effect {
+	font-weight: 500;
+	margin-bottom: 8px;
+	color: #495057;
+}
+.obtain {
+	font-size: 0.95rem;
+	color: #6c757d;
+}
+.details-container {
+	background-color: #f8f9fa;
+	padding: 24px;
+	border-radius: 8px;
+	margin-bottom: 40px;
+	border: 1px solid #e9ecef;
+}
+.details-list {
+	padding-left: 20px;
+	margin: 0;
+	color: #495057;
+}
+.details-list li {
+	margin-bottom: 12px;
+	line-height: 1.6;
+}
+.strategy-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+.strategy-card {
+	background-color: #f8f9fa;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	border: 1px solid #e9ecef;
+}
+.strategy-card h4 {
+	margin-top: 0;
+	margin-bottom: 12px;
+	color: #212529;
+	font-size: 1.2rem;
+}
+.strategy-card p {
+	color: #495057;
+	line-height: 1.6;
+}
+.strategy {
+	margin-bottom: 48px;
+}
+
+/* 折叠功能相关样式 */
+.section-collapsible {
+	transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+	overflow: hidden;
+	max-height: 2000px;
+	opacity: 1;
+}
+.section-collapsible.collapsed {
+	max-height: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+}
+.clickable {
+	cursor: pointer;
+	position: relative;
+}
+.clickable::after {
+	content: "▼";
+	position: absolute;
+	right: 10px;
+	transition: transform 0.3s;
+}
+.collapsed .clickable::after {
+	transform: rotate(-90deg);
+}
+
+/* 自定义按钮样式，与CallToAction组件保持一致 */
+.cta-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 1.5rem;
+	background-color: #0077cc;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	text-decoration: none;
+}
+.cta-button:hover {
+	background-color: #005fa3;
+}
+</style>
