@@ -33,14 +33,47 @@ const images = await Astro.glob('../../assets/projects/cover/darkroom/*.{jpg,png
 							</p>
 						</div>
 						<div class="col-1a">
-							<p>
-								<div class="btn">
-									<CallToAction href="http://roomgame.mpsxx.top/?lang=zh_cn" target="_blank">
-										开始游戏
-									</CallToAction>
-									<button id="skills-toggle" class="cta-button">
-										游戏技能
-									</button>
+							<div class="btn">
+								<a href="https://adarkroom.doublespeakgames.com/" target="_blank" class="cta-button cta-primary">
+									开始游戏
+								</a>
+								<button id="skills-toggle" class="cta-button cta-secondary">
+									游戏技能
+								</button>
+								<button id="details-toggle" class="cta-button cta-secondary">
+									游戏细节
+								</button>
+								<button id="strategy-toggle" class="cta-button cta-secondary">
+									游戏攻略
+								</button>
+							</div>
+							<p class="loading-hint">加载会慢一点，请耐心等待 ⌛</p>
+
+	<style>
+	.loading-hint {
+		font-size: 0.9rem;
+		color: #666;
+		margin-top: 8px;
+		padding: 8px 12px;
+		background-color: #f5f5f5;
+		border-radius: 4px;
+		display: inline-block;
+		border: 1px solid #e0e0e0;
+		animation: pulse 2s infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			opacity: 0.6;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0.6;
+		}
+	}
+	</style>
 								</div>
 							</p>
 						</div>
@@ -185,6 +218,34 @@ const images = await Astro.glob('../../assets/projects/cover/darkroom/*.{jpg,png
 					}
 				});
 			}
+			
+			// 游戏细节按钮点击事件
+			const detailsToggle = document.getElementById('details-toggle');
+			const detailsSection = document.getElementById('game-details');
+			
+			if(detailsToggle && detailsSection) {
+				detailsToggle.addEventListener('click', function() {
+					detailsSection.classList.toggle('collapsed');
+					
+					if(!detailsSection.classList.contains('collapsed')) {
+						detailsSection.scrollIntoView({ behavior: 'smooth' });
+					}
+				});
+			}
+			
+			// 攻略按钮点击事件
+			const strategyToggle = document.getElementById('strategy-toggle');
+			const strategySection = document.querySelector('.strategy.section-collapsible');
+			
+			if(strategyToggle && strategySection) {
+				strategyToggle.addEventListener('click', function() {
+					strategySection.classList.toggle('collapsed');
+					
+					if(!strategySection.classList.contains('collapsed')) {
+						strategySection.scrollIntoView({ behavior: 'smooth' });
+					}
+				});
+			}
 
 			// 为所有部分标题添加点击事件，使其可折叠
 			const sectionTitles = document.querySelectorAll('.section-collapsible .post-title');
@@ -209,8 +270,76 @@ img{
 }
 .btn{
 	display: flex;
-	gap: 16px;
-	margin-bottom: 0; /* 减少按钮下方的边距 */
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+	.btn {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.btn .cta-button {
+		width: 100%;
+	}
+}
+
+/* 自定义按钮样式，与CallToAction组件保持一致 */
+.cta-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 1.5rem;
+	background-color: #0077cc;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+	text-decoration: none;
+	min-width: 120px;
+	text-align: center;
+}
+
+.cta-button:hover {
+	background-color: #005fa3;
+	transform: translateY(-2px);
+}
+
+.cta-primary {
+	background-color: #0077cc;
+}
+
+.cta-primary:hover {
+	background-color: #005fa3;
+}
+
+.cta-secondary {
+	background-color: #6c757d;
+}
+
+.cta-secondary:hover {
+	background-color: #5a6268;
+}
+.loading-hint {
+	font-size: 0.9rem;
+	color: #666;
+	margin-top: 8px;
+	padding: 8px 12px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	text-align: center; /* 使文字居中 */
+	display: block; /* 确保元素是块级元素 */
+	border: 1px solid #e0e0e0;
+	animation: pulse 2s infinite;
+	max-width: 300px; /* 控制提示框宽度 */
+	margin-left: auto; /* 水平居中 */
+	margin-right: auto; /* 水平居中 */
 }
 /* 减少按钮与图片之间的间距 */
 .preview {
@@ -315,24 +444,5 @@ img{
 }
 .collapsed .clickable::after {
 	transform: rotate(-90deg);
-}
-
-/* 自定义按钮样式，与CallToAction组件保持一致 */
-.cta-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.75rem 1.5rem;
-	background-color: #0077cc;
-	color: white;
-	border: none;
-	border-radius: 4px;
-	font-weight: 500;
-	cursor: pointer;
-	transition: background-color 0.3s;
-	text-decoration: none;
-}
-.cta-button:hover {
-	background-color: #005fa3;
 }
 </style>
